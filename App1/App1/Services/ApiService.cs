@@ -37,8 +37,10 @@ namespace App1.Services
         public List<Lote> ProductosAxe()
         {
             var lista = new List<Lote>();
-            lista.Add(new Lote() { CodigoProducto = 101, Descripcion = "Chicle Vitolero", Imagen = "GlobosLogo" ,DescripcionLote = "9 botes, 120 unidades c/u", Precio=0});
-            lista.Add(new Lote() { CodigoProducto = 101, Descripcion = "Chicle Vitolero", Imagen = "GlobosLogo", DescripcionLote = "9 botes, 120 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 101, Descripcion = "Chicle Vitolero", Imagen = "GlobosLogo" ,DescripcionLote = "9 botes, 120 unidades c/u", Precio=0 });
+            lista.Add(new Lote() { CodigoProducto = 102, Descripcion = "Milky Way Minis", Imagen = "GlobosLogo", DescripcionLote = "12 botes, 52 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 103, Descripcion = "M&M's Minis", Imagen = "GlobosLogo", DescripcionLote = "12 botes, 52 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 104, Descripcion = "Snickers Minis", Imagen = "GlobosLogo", DescripcionLote = "12 botes, 52 unidades c/u", Precio = 0 });
             return lista;
         }
 

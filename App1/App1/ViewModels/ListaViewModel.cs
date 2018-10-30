@@ -14,7 +14,7 @@ namespace App1.ViewModels
         private bool isRefreshing;
 
         private string filtro;
-        private List<Productos> listaP;
+        private List<Lote> listaP;
         #endregion
 
         #region Propiedades
@@ -60,7 +60,8 @@ namespace App1.ViewModels
                 CodigoProducto = l.CodigoProducto,
                 Descripcion = l.Descripcion,
                 Imagen = l.Imagen,
-                DescripcionLote = l.
+                DescripcionLote = l.DescripcionLote,
+                Precio = l.Precio
             });
         }
         #endregion
