@@ -5,11 +5,11 @@ namespace App1.ViewModels
     public class ProductoViewModel
     {
         #region Propiedades
-        public Productos Articulo { get; set; }
+        public Lote Articulo { get; set; }
         #endregion
 
         #region Constructores
-        public ProductoViewModel(Productos articulo)
+        public ProductoViewModel(Lote articulo)
         {
             this.Articulo = articulo;
         }

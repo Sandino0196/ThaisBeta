@@ -6,7 +6,7 @@ using Xamarin.Forms;
 
 namespace App1.ViewModels
 {
-    public class ProductoItemViewModel:Productos
+    public class ProductoItemViewModel:Lote
     {
         #region Comandos
         public ICommand PresentarArticulo

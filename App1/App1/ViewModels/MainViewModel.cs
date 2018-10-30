@@ -7,6 +7,7 @@ namespace App1.ViewModels
         public LoginViewModel Login { get; set; }
         public ArticulosViewModel Articulos{ get; set; }
         public ProductoViewModel Articulo { get; set; }
+        public ListaViewModel Listado { get; set; }
         #endregion
 
         #region Constructores

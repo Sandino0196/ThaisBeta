@@ -34,10 +34,11 @@ namespace App1.Services
             return lista;
         }
 
-        public List<Productos> ProductosAxe()
+        public List<Lote> ProductosAxe()
         {
-            var lista = new List<Productos>();
-
+            var lista = new List<Lote>();
+            lista.Add(new Lote() { CodigoProducto = 101, Descripcion = "Chicle Vitolero", Imagen = "GlobosLogo" ,DescripcionLote = "9 botes, 120 unidades c/u", Precio=0});
+            lista.Add(new Lote() { CodigoProducto = 101, Descripcion = "Chicle Vitolero", Imagen = "GlobosLogo", DescripcionLote = "9 botes, 120 unidades c/u", Precio = 0 });
             return lista;
         }
 
