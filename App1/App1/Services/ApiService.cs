@@ -34,7 +34,14 @@ namespace App1.Services
             return lista;
         }
 
-        public async Task<Response> CheckConnection()
+        public List<Productos> ProductosAxe()
+        {
+            var lista = new List<Productos>();
+
+            return lista;
+        }
+
+            public async Task<Response> CheckConnection()
         {
             if(!CrossConnectivity.Current.IsConnected)
             {
