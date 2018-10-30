@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.MenuPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar>
+            </SearchBar>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout HorizontalOptions="StartAndExpand">
+                    <Label Text="Est es el primero"/>
+                    <Label Text="Est es el segundo"/>
+                    <Label Text="Est es el tercero"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="EndAndExpand">
+                    <Label Text="Est es el primero1"/>
+                    <Label Text="Est es el segundo2"/>
+                    <Label Text="Est es el tercero3"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

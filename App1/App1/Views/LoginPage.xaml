@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.LoginPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Thais Comercial - Login">
+    <ContentPage.Content>
+        <ScrollView BindingContext="{Binding Login}">
+            <StackLayout Padding="10,20,10,5">
+                <Image Source="thais" WidthRequest="300"></Image>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label 
+                        Text="Usuario" FontSize="Large" FontAttributes="Bold"
+                        Grid.Row="0" Grid.Column="0" VerticalOptions="Center">
+                    </Label>
+                    <Entry Placeholder="Ingrese su Usuario..."
+                       Grid.Row="0" Grid.Column="1" Text="{Binding Usuario, Mode=TwoWay}">
+                    </Entry>
+                    <Label Text="Password" FontSize="Large" FontAttributes="Bold"
+                            Grid.Row="1" Grid.Column="0" VerticalOptions="Center">
+                    </Label>
+                    <Entry IsPassword="True" Placeholder="Ingrese su contraseña..."
+                            Grid.Row="1" Grid.Column="1" Text="{Binding Password, Mode=TwoWay}">
+                    </Entry>
+                </Grid>
+                <ActivityIndicator IsRunning="{Binding IsRunning, Mode=TwoWay}"></ActivityIndicator>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Recuerdame" FontSize="Large" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="StartAndExpand"></Label>
+                    <Switch HorizontalOptions="End" IsToggled="{Binding IsRemembered, Mode=TwoWay}"></Switch>
+                </StackLayout>
+                <Label Text="Olvide mi contraseña" TextColor="Blue" HorizontalOptions="Center"></Label>
+                <StackLayout Margin="40,0">
+                    <Button BackgroundColor="Navy" BorderRadius="23" HeightRequest="46" TextColor="White" Text="Login"
+                            Command="{Binding LoginCommand}" IsEnabled="{Binding IsEnabled, Mode=TwoWay}" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
