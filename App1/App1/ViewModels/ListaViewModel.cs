@@ -14,7 +14,7 @@ namespace App1.ViewModels
       //  private bool isRefreshing;
 
         private string filtro;
-        private List<Lote> listaP;
+        //private List<Lote> listaP;
         #endregion
 
         #region Propiedades
@@ -46,7 +46,7 @@ namespace App1.ViewModels
         #endregion
 
         #region Metodos
-        private IEnumerable<ProductoItemViewModel> ToProductoItemViewModel()
+        /*private IEnumerable<ProductoItemViewModel> ToProductoItemViewModel()
         {
             return this.listaP.Select(l => new ProductoItemViewModel
             {
@@ -56,7 +56,7 @@ namespace App1.ViewModels
                 DescripcionLote = l.DescripcionLote,
                 Precio = l.Precio
             });
-        }
+        }*/
         #endregion
 
     }
