@@ -332,13 +332,66 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 1229, Descripcion = "Gel Xtreme Sachet", Imagen = "GlobosLogo", DescripcionLote = "30 unidades de 6 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1230, Descripcion = "Gel Xtreme Squeeze", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 500 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1231, Descripcion = "Gel Xtreme 4 Kilos", Imagen = "GlobosLogo", DescripcionLote = "6 unidades de 4 kilogramos por caja", Precio = 0 });
-
             return lista;
         }
 
+        public List<Lote> Abarroteria()
+        {
+            var lista = new List<Lote>();
+            lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Elote Dorado del Monte", Imagen = "GlobosLogo", DescripcionLote = "24 unidades de 225 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Chicharos del Monte", Imagen = "GlobosLogo", DescripcionLote = "24 unidades de 225 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Chicharos del Monte", Imagen = "GlobosLogo", DescripcionLote = "24 unidades de 400 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Ensalada de Verduras", Imagen = "GlobosLogo", DescripcionLote = "24 unidades de 215 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Ensalada de Verduras", Imagen = "GlobosLogo", DescripcionLote = "24 unidades de 400 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Leche Condensada La Lechera", Imagen = "GlobosLogo", DescripcionLote = "48 unidades de 100 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Leche Condensada La Lechera", Imagen = "GlobosLogo", DescripcionLote = "48 unidades de 100 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Leche en Polvo NAN 1", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 1 kilogramo por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Leche en Polvo NAN 1 Optipro", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 1 kilogramo por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Papel Higienico Monarca 450 hojas doble", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 4 rollos por paquete", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Pasta Crest Anti-Caries", Imagen = "GlobosLogo", DescripcionLote = "36 unidades de 75ml por caja", Precio = 0 });
+            return lista;
+        }
 
+        public List<Lote> Smarty()
+        {
+            var lista = new List<Lote>();
+            lista.Add(new Lote() { CodigoProducto = 1401, Descripcion = "Pañal Grande G4", Imagen = "GlobosLogo", DescripcionLote = "50 unidades por paquete", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1402, Descripcion = "Pañal Mediano M3", Imagen = "GlobosLogo", DescripcionLote = "52 unidades por paquete", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1403, Descripcion = "Pañal Pequeño P2", Imagen = "GlobosLogo", DescripcionLote = "56 unidades por paquete", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1404, Descripcion = "Pañal XX Grande", Imagen = "GlobosLogo", DescripcionLote = "40 unidades por paquete", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1405, Descripcion = "Pañal XG Grande", Imagen = "GlobosLogo", DescripcionLote = "46 unidades por paquete", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1406, Descripcion = "Toallitas Humedas", Imagen = "GlobosLogo", DescripcionLote = "12 paquetes de 84 unidades", Precio = 0 });
+            return lista;
+        }
 
-            public async Task<Response> CheckConnection()
+        public List<Lote> Senior()
+        {
+            var lista = new List<Lote>();
+            lista.Add(new Lote() { CodigoProducto = 1501, Descripcion = "Pañal para Adulto Pequeño", Imagen = "GlobosLogo", DescripcionLote = "4 paquetes de 10 unidades", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1502, Descripcion = "Pañal para Adulto Mediano", Imagen = "GlobosLogo", DescripcionLote = "4 paquetes de 10 unidades", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1503, Descripcion = "Pañal para Adulto Grande", Imagen = "GlobosLogo", DescripcionLote = "4 paquetes de 10 unidades", Precio = 0 });
+            return lista;
+        }
+
+        public List<Lote> Lucky()
+        {
+            var lista = new List<Lote>();
+            lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Cubitos", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Gomitas", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Gotitas", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Frutitas", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Corazones", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Lombriz Neon", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Orugas", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Ositos", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Lombrices", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Aros de Manzano", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Aros de Durazno", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Frutitas", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 100 gramos por caja", Precio = 0 });
+            return lista;
+        }
+
+        public async Task<Response> CheckConnection()
         {
             if(!CrossConnectivity.Current.IsConnected)
             {
