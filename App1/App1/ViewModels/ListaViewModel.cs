@@ -11,7 +11,7 @@ namespace App1.ViewModels
                 
         #region Atributos
         private ObservableCollection<ProductoItemViewModel> lista;
-        private bool isRefreshing;
+      //  private bool isRefreshing;
 
         private string filtro;
         private List<Lote> listaP;
@@ -24,19 +24,12 @@ namespace App1.ViewModels
             set { setValue(ref this.lista, value); }
         }
 
-        public bool IsRefreshing
-        {
-            get { return this.isRefreshing; }
-            set { setValue(ref this.isRefreshing, value); }
-        }
-
         public string Filtro
         {
             get { return this.filtro; }
             set
             {
                 setValue(ref this.filtro, value);
-              //  this.Search();
             }
         }
         #endregion
