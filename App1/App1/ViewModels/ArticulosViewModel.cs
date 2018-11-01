@@ -25,6 +25,12 @@ namespace App1.ViewModels
             set { setValue(ref this.listadoProductos, value); }
         }
 
+        public List<Productos> ListaP
+        {
+             get { return this.listaP; }
+            set { setValue(ref this.listaP, value); }
+        }
+
         public bool IsRefreshing
         {
             get { return this.isRefreshing; }
