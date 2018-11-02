@@ -12,9 +12,9 @@ namespace App1.Services
         {
             var lista = new List<Productos>();
             lista.Add(new Productos() { CodigoProducto = 1, Descripcion = "Dulces", Imagen = "DulcesLogo" });
-            lista.Add(new Productos() { CodigoProducto = 2, Descripcion = "Producto Hogar", Imagen = "HogarLogo.jpg" });
+            lista.Add(new Productos() { CodigoProducto = 2, Descripcion = "Producto Hogar", Imagen = "HogarLogo" });
             lista.Add(new Productos() { CodigoProducto = 3, Descripcion = "Producto Personal", Imagen = "BanoLogo" });
-            lista.Add(new Productos() { CodigoProducto = 4, Descripcion = "Abarroteria", Imagen = "AbarroteriaLogo.jpg" });
+            lista.Add(new Productos() { CodigoProducto = 4, Descripcion = "Abarroteria", Imagen = "AbarroteriaLogo" });
             return lista;
         }
 
@@ -60,12 +60,6 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 212, Descripcion = "Raid Casa y Jardin", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 213, Descripcion = "Raid Mata Moscas y Mosquitos", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 214, Descripcion = "Raid Mata Cucarachas, Moscas y Mosquitos", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            return lista;
-        }
-
-        public List<Lote> ProductosDowny()
-        {
-            var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 301, Descripcion = "Romance", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 302, Descripcion = "Elegance", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 303, Descripcion = "Floral", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
@@ -82,12 +76,6 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 314, Descripcion = "Flor de Luna", Imagen = "GlobosLogo", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 315, Descripcion = "Pureza Silvestre", Imagen = "GlobosLogo", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 316, Descripcion = "Floral", Imagen = "GlobosLogo", DescripcionLote = "8.5 Litros por unidad", Precio = 0 });
-            return lista;
-        }
-
-        public List<Lote> ProductosSuavitel()
-        {
-            var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 401, Descripcion = "Fresa y Chocolate", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 402, Descripcion = "Aqua", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 850ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 403, Descripcion = "Abrazo de sol", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
@@ -99,7 +87,7 @@ namespace App1.Services
             return lista;
         }
 
-        public List<Lote> ProductosAxe()
+        public List<Lote> ProductosBano()
         {
             var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 501, Descripcion = "Black Night", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
@@ -129,12 +117,6 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 525, Descripcion = "Gold", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 526, Descripcion = "Kilo", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 527, Descripcion = "Dark Temptation Value Pack", Imagen = "GlobosLogo", DescripcionLote = "18 unidades de 90ml por caja", Precio = 0 });
-            return lista;
-        }
-
-        public List<Lote> ProductosRexona()
-        {
-            var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 601, Descripcion = "Cobalt Dry", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 602, Descripcion = "Super Hero", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 603, Descripcion = "Antibacterial", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
@@ -160,12 +142,6 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 623, Descripcion = "Super Hero", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 624, Descripcion = "Invisible", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 625, Descripcion = "Antibacterial + Invisible", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
-            return lista;
-        }
-
-        public List<Lote> ProductosDove()
-        {
-            var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 701, Descripcion = "Acondicionador Control Caida", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 702, Descripcion = "Acondicionador Oleo Nutricion", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 703, Descripcion = "Acondicionador Puntas Reconstruidas", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
@@ -181,12 +157,6 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 713, Descripcion = "Antitranspirante Dermo Aclarant", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 96ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 714, Descripcion = "Antitranspirante Original", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 96ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 715, Descripcion = "Antitranspirante Go Fresh Pepino y Te Verde", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 96ml por caja", Precio = 0 });
-            return lista;
-        }
-
-        public List<Lote> ProductosHS()
-        {
-            var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 701, Descripcion = "Shampoo Limpieza Renovadora", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 702, Descripcion = "Shampoo Proteccion Caida", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 703, Descripcion = "Shampoo Alivio Refrescante", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
@@ -196,12 +166,6 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 707, Descripcion = "Shampoo Fuerza Rejuvenecedora", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 708, Descripcion = "Shampoo Relax Control Comezon", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 709, Descripcion = "Shampoo Suave y Manejable", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            return lista;
-        }
-
-        public List<Lote> ProductosTRES()
-        {
-            var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 801, Descripcion = "Shampoo Control Caida", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 802, Descripcion = "Shampoo Keratin Smooth", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 803, Descripcion = "Shampoo Rizos Perfectos", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
@@ -217,12 +181,6 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 813, Descripcion = "Acondicionador Repair Rituals", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 814, Descripcion = "Acondicionador Liso y Sedoso", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 815, Descripcion = "Acondicionador Split Remedy", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            return lista;
-        }
-
-        public List<Lote> ProductosSedal()
-        {
-            var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 901, Descripcion = "Acondicionador Caida", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 902, Descripcion = "Acondicionador Hidratacion Ligera", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 903, Descripcion = "Acondicionador Liso Perfecto", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
@@ -252,12 +210,6 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 927, Descripcion = "Shampoo Miel y Germen de Trigo", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 928, Descripcion = "Shampoo Bombaa Argan", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 929, Descripcion = "Shampoo Hidratacion Ligera", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
-            return lista;
-        }
-
-        public List<Lote> ProductosCaprice()
-        {
-            var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 1001, Descripcion = "Shampoo Anticaspa", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1002, Descripcion = "Shampoo Anticerami", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1003, Descripcion = "Shampoo Biotina", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
@@ -265,12 +217,6 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 1005, Descripcion = "Shampoo Herbal", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1006, Descripcion = "Shampoo Maxigloss", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1007, Descripcion = "Shampoo Proteccion y Crecimiento", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
-            return lista;
-        }
-
-        public List<Lote> ProductosSavile()
-        {
-            var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 1101, Descripcion = "Shampoo Chile", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1102, Descripcion = "Shampoo Biotina", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1103, Descripcion = "Shampoo Aceite de Argan", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
@@ -279,12 +225,6 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 1106, Descripcion = "Shampoo Colageno", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1107, Descripcion = "Shampoo Rizos Radiantes", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1108, Descripcion = "Shampoo Aguacate", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            return lista;
-        }
-
-        public List<Lote> ProductosBano()
-        {
-            var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 1201, Descripcion = "Jabon Palmolive Aloe", Imagen = "GlobosLogo", DescripcionLote = "72 unidades de 160 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1202, Descripcion = "Jabon Palmolive Fusion Nutritiva", Imagen = "GlobosLogo", DescripcionLote = "72 unidades de 180 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1203, Descripcion = "Jabon Palmolive Hidratacion Radiante", Imagen = "GlobosLogo", DescripcionLote = "72 unidades de 180 gramos por caja", Precio = 0 });
@@ -333,33 +273,15 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Leche en Polvo NAN 1 Optipro", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 1 kilogramo por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Papel Higienico Monarca 450 hojas doble", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 4 rollos por paquete", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Pasta Crest Anti-Caries", Imagen = "GlobosLogo", DescripcionLote = "36 unidades de 75ml por caja", Precio = 0 });
-            return lista;
-        }
-
-        public List<Lote> Smarty()
-        {
-            var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 1401, Descripcion = "Pañal Grande G4", Imagen = "GlobosLogo", DescripcionLote = "50 unidades por paquete", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1402, Descripcion = "Pañal Mediano M3", Imagen = "GlobosLogo", DescripcionLote = "52 unidades por paquete", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1403, Descripcion = "Pañal Pequeño P2", Imagen = "GlobosLogo", DescripcionLote = "56 unidades por paquete", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1404, Descripcion = "Pañal XX Grande", Imagen = "GlobosLogo", DescripcionLote = "40 unidades por paquete", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1405, Descripcion = "Pañal XG Grande", Imagen = "GlobosLogo", DescripcionLote = "46 unidades por paquete", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1406, Descripcion = "Toallitas Humedas", Imagen = "GlobosLogo", DescripcionLote = "12 paquetes de 84 unidades", Precio = 0 });
-            return lista;
-        }
-
-        public List<Lote> Senior()
-        {
-            var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 1501, Descripcion = "Pañal para Adulto Pequeño", Imagen = "GlobosLogo", DescripcionLote = "4 paquetes de 10 unidades", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1502, Descripcion = "Pañal para Adulto Mediano", Imagen = "GlobosLogo", DescripcionLote = "4 paquetes de 10 unidades", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1503, Descripcion = "Pañal para Adulto Grande", Imagen = "GlobosLogo", DescripcionLote = "4 paquetes de 10 unidades", Precio = 0 });
-            return lista;
-        }
-
-        public List<Lote> Lucky()
-        {
-            var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Cubitos", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Gomitas", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Gotitas", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
@@ -373,7 +295,7 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Aros de Durazno", Imagen = "GlobosLogo", DescripcionLote = "8 unidades de 1 kilogramo por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1601, Descripcion = "Frutitas", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 100 gramos por caja", Precio = 0 });
             return lista;
-        }
+        }        
 
         public async Task<Response> CheckConnection()
         {

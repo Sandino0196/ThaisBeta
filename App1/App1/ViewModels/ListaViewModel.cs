@@ -79,43 +79,7 @@ namespace App1.ViewModels
 
         public virtual async void LoadListas()
         {
-            /*this.IsRefreshing = true;
-            var connection = await this.apiService.CheckConnection();
-            if (!connection.IsSuccess)
-            {
-                this.IsRefreshing = false;
-                await Application.Current.MainPage.DisplayAlert("Error", connection.Message, "Aceptar");
-                await Application.Current.MainPage.Navigation.PopAsync();
-                return;
-            }
-
-            this.listaC = (List<Lote>)apiService.ProductosDulce();
-            this.Lista = new ObservableCollection<Lote>(listaC);
-            this.IsRefreshing = false;
-            if (modelo.CambiaWhich(ref modelo) == 1)
-            {
-                this.listaC = (List<Lote>)apiService.ProductosDulce();
-                this.Lista = new ObservableCollection<Lote>(listaC);
-                this.IsRefreshing = false;
-            } else
-            if (modelo.CambiaWhich(ref modelo) == 2)
-            {
-                this.listaC = (List<Lote>)apiService.ProductosBano();
-                this.Lista = new ObservableCollection<Lote>(listaC);
-                this.IsRefreshing = false;
-            } else
-            if (modelo.CambiaWhich(ref modelo) == 3)
-            {
-                this.listaC = (List<Lote>)apiService.Abarroteria();
-                this.Lista = new ObservableCollection<Lote>(listaC);
-                this.IsRefreshing = false;
-            } else
-            if (modelo.CambiaWhich(ref modelo) == 4)
-            {
-                this.listaC = (List<Lote>)apiService.ProductosHogar();
-                this.Lista = new ObservableCollection<Lote>(listaC);
-                this.IsRefreshing = false;
-            }*/
+            
         }
         #endregion
 
