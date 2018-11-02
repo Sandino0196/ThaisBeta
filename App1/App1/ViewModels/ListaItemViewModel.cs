@@ -1,15 +1,13 @@
 ﻿using App1.Models;
-using App1.Views;
 using GalaSoft.MvvmLight.Command;
 using System.Windows.Input;
-using Xamarin.Forms;
 
 namespace App1.ViewModels
 {
     public class ListaItemViewModel:Lote
     {
         #region Comandos
-        public ICommand PresentarArticulo
+        public ICommand PresentarLista
         {
             get
             {
@@ -17,10 +15,9 @@ namespace App1.ViewModels
             }
         }
 
-        private async void Presentar()
+        public virtual async void Presentar()
         {
-            MainViewModel.GetInstance().Listado = new ListaViewModel(this);
-            await Application.Current.MainPage.Navigation.PushAsync(new ProductoPage());
+
         }
         #endregion
     }

@@ -20,7 +20,7 @@ namespace App1.ViewModels
         private async void Presentar()
         {
             MainViewModel.GetInstance().Articulo = new ProductoViewModel(this);
-            await Application.Current.MainPage.Navigation.PushAsync(new ProductoPage());
+            await Application.Current.MainPage.Navigation.PushAsync(new ListaPage());
         }
         #endregion
     }

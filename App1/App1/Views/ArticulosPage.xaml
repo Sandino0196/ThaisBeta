@@ -7,32 +7,26 @@
              Title="Thais Comercial - Inicio">
     <ContentPage.Content>
         <StackLayout BindingContext="{Binding Articulos}">
-            <SearchBar
-                Placeholder="Search..."
-                Text="{Binding Filtro, Mode=TwoWay}"
-                BackgroundColor="Silver"
-                HeightRequest="46"
-                SearchCommand="{Binding SearchCommand}">
-            </SearchBar>
-            <Frame CornerRadius="20" HasShadow="True" Margin="5">
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding PresentarArticulo}"/>
-                </Frame.GestureRecognizers>
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Button Grid.Column="0" Grid.Row="0" Image="DulcesLogo" HeightRequest="300" WidthRequest="300"/>
-                    <Button Image="AxeLogo" HeightRequest="300" WidthRequest="300" Grid.Column="1" Grid.Row="0" HorizontalOptions="End"/>
-                    <Button Image="SedalLogo" HeightRequest="300" WidthRequest="300" Grid.Column="0" Grid.Row="1"/>
-                    <Button Image="BanoLogo" HeightRequest="300" WidthRequest="300" Grid.Column="1" Grid.Row="1" HorizontalOptions="End"/>
-                </Grid>
-            </Frame>
+            <Grid HorizontalOptions="Center" BackgroundColor="GhostWhite">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Grid.Column="0" Grid.Row="0" Image="DulceLogo" HorizontalOptions="Start"
+                        HeightRequest="300" BorderRadius="20" Command="{Binding DulceCommand}"/>
+                <Button Image="HigieneLogo" Grid.Column="1" Grid.Row="0"
+                        HorizontalOptions="End" HeightRequest="300" BorderRadius="20"
+                        Command="{Binding HigieneCommand}"/>
+                <Button Image="HogarLogo" Grid.Column="0" Grid.Row="1" HorizontalOptions="Start"
+                        HeightRequest="300" BorderRadius="20" Command="{Binding HogarCommand}"/>
+                <Button Image="AbarroteriaLogo" Grid.Column="1" Grid.Row="1" 
+                        HorizontalOptions="End" HeightRequest="300" BorderRadius="20"
+                        Command="{Binding AbarroteriaCommand}"/>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.Views.ProductoPage"
+             x:Class="App1.Views.ListaPage"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
              BackgroundColor="WhiteSmoke"
              Title="Producto">
@@ -26,10 +26,10 @@
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
                                 <StackLayout Grid.Column="0" VerticalOptions="Center">
-                                    <Label FontSize="Large" FontAttributes="Bold" Text="{Binding Lista.Descripcion}" HorizontalOptions="Center" TextColor="Black"></Label>
-                                    <Label FontSize="Large" FontAttributes="Bold" Text="{Binding Lista.DescripcioLote}" HorizontalOptions="Center" TextColor="Black"></Label>
-                                    <Image Source="{Binding Lista.Imagen}" HeightRequest="100" HorizontalOptions="Center"></Image>
+                                    <Label FontSize="Large" FontAttributes="Bold" Text="{Binding Descripcion}" TextColor="Black"></Label>
+                                    <Label FontSize="Large" Text="{Binding Lista.DescripcioLote}" TextColor="Black"></Label>
                                 </StackLayout>
+                                <Image Grid.Column="1" Source="{Binding Imagen}" HeightRequest="100" HorizontalOptions="End"></Image>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

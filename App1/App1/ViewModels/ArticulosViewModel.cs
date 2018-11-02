@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
 using App1.Models;
+using App1.Views;
 using App1.Services;
 using Xamarin.Forms;
 
@@ -16,6 +17,7 @@ namespace App1.ViewModels
         private bool isRefreshing;
         private string filtro;
         private List<Productos> listaP;
+        //private int which;
         #endregion
 
         #region Propiedades
@@ -43,7 +45,7 @@ namespace App1.ViewModels
             set
             {
                 setValue(ref this.filtro, value);
-                this.Search();
+                //this.Search();
             }
         }
         #endregion
@@ -56,12 +58,12 @@ namespace App1.ViewModels
         public ArticulosViewModel()
         {
             this.apiService = new ApiService();
-            this.LoadArticulos();
+            //this.LoadArticulos();
         }
         #endregion
 
         #region Metodos
-        private IEnumerable<ProductoItemViewModel> ToProductoItemViewModel()
+        /*private IEnumerable<ProductoItemViewModel> ToListaItemViewModel()
         {
             return this.listaP.Select(l => new ProductoItemViewModel
             {
@@ -69,9 +71,9 @@ namespace App1.ViewModels
                 Descripcion = l.Descripcion,
                 Imagen = l.Imagen
             });
-        }
+        }*/
 
-        private async void LoadArticulos()
+        /*private async void LoadArticulos()
         {
             this.IsRefreshing = true;
             var connection = await this.apiService.CheckConnection();
@@ -84,13 +86,13 @@ namespace App1.ViewModels
             }
             this.listaP = apiService.Catalogo();
             this.ListadoProductos = new ObservableCollection<ProductoItemViewModel>(
-                this.ToProductoItemViewModel());
+                this.ToListaItemViewModel());
             this.IsRefreshing = false;
-        }
+        }*/
         #endregion
 
         #region Comandos
-        public ICommand RefreshCommand
+        /*public ICommand RefreshCommand
         {
             get
             {
@@ -117,6 +119,62 @@ namespace App1.ViewModels
                 this.ListadoProductos = new ObservableCollection<ProductoItemViewModel>(
                     this.ToProductoItemViewModel().Where(p => p.Descripcion.ToLower().Contains(this.Filtro.ToLower())));
             }
+        }*/
+
+        public ICommand DulceCommand
+        {
+            get
+            {
+                return new RelayCommand(LoadDulces);
+            }
+        }
+
+        private async void LoadDulces()
+        {
+            MainViewModel.GetInstance().Listado = new Lista2ViewModel();
+            await Application.Current.MainPage.Navigation.PushAsync(new ListaPage());
+        }
+
+        public ICommand HigieneCommand
+        {
+            get
+            {
+                return new RelayCommand(LoadHigiene);
+            }
+        }
+
+        private async void LoadHigiene()
+        {
+            MainViewModel.GetInstance().Listado = new Lista3ViewModel();
+            await Application.Current.MainPage.Navigation.PushAsync(new ListaPage());
+        }
+
+        public ICommand HogarCommand
+        {
+            get
+            {
+                return new RelayCommand(LoadHogar);
+            }
+        }
+
+        private async void LoadHogar()
+        {
+            MainViewModel.GetInstance().Listado = new Lista4ViewModel();
+            await Application.Current.MainPage.Navigation.PushAsync(new ListaPage());
+        }
+
+        public ICommand AbarroteriaCommand
+        {
+            get
+            {
+                return new RelayCommand(LoadAba);
+            }
+        }
+
+        private async void LoadAba()
+        {
+            MainViewModel.GetInstance().Listado = new Lista5ViewModel();
+            await Application.Current.MainPage.Navigation.PushAsync(new ListaPage());
         }
         #endregion
     }

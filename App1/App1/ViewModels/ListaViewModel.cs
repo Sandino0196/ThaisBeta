@@ -5,26 +5,25 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
-using Xamarin.Forms;
 
 namespace App1.ViewModels
 {
-    public class ListaViewModel: BaseViewModel
+    public abstract class ListaViewModel: BaseViewModel
     {
                 
         #region Atributos
-        private ObservableCollection<ListaItemViewModel> lista;
+        private ObservableCollection<Lote> lista;
         private bool isRefreshing;
-        private MainViewModel modelo;
+        private ArticulosViewModel modelo = new ArticulosViewModel();
         private string filtro;
-        private List<Lote> listaC;
+        public List<Lote> listaC;
         
         #endregion
 
         #region Propiedades
         public Lote ListaArticulo { get; set; }
 
-        public ObservableCollection<ListaItemViewModel> Lista
+        public ObservableCollection<Lote> Lista
         {
             get { return this.lista; }
             set { setValue(ref this.lista, value); }
@@ -48,14 +47,14 @@ namespace App1.ViewModels
         #endregion
 
         #region Servicios
-        private ApiService apiService;
+        public ApiService apiService;
         #endregion
 
         #region Constructores
         public ListaViewModel()
         {
             this.apiService = new ApiService();
-            this.LoadArticulos();
+            this.LoadListas();
         }
         public ListaViewModel(Lote articulo)
         {
@@ -66,7 +65,7 @@ namespace App1.ViewModels
 
 
         #region Metodos
-        private IEnumerable<ListaItemViewModel> ToListaViewModel()
+        public virtual IEnumerable<ListaItemViewModel> ToListaViewModel()
         {
             return this.listaC.Select(l => new ListaItemViewModel()
             {
@@ -78,9 +77,9 @@ namespace App1.ViewModels
             });
         }
 
-        private async void LoadArticulos()
+        public virtual async void LoadListas()
         {
-            this.IsRefreshing = true;
+            /*this.IsRefreshing = true;
             var connection = await this.apiService.CheckConnection();
             if (!connection.IsSuccess)
             {
@@ -89,19 +88,34 @@ namespace App1.ViewModels
                 await Application.Current.MainPage.Navigation.PopAsync();
                 return;
             }
-            if (modelo.Articulo.Articulo.CodigoProducto == 1)
+
+            this.listaC = (List<Lote>)apiService.ProductosDulce();
+            this.Lista = new ObservableCollection<Lote>(listaC);
+            this.IsRefreshing = false;
+            if (modelo.CambiaWhich(ref modelo) == 1)
             {
-                this.listaC = apiService.ProductosDulce();
-                this.Lista = new ObservableCollection<ListaItemViewModel>(
-                    this.ToListaViewModel());
+                this.listaC = (List<Lote>)apiService.ProductosDulce();
+                this.Lista = new ObservableCollection<Lote>(listaC);
                 this.IsRefreshing = false;
-            } else if (modelo.Articulo.Articulo.CodigoProducto == 2)
+            } else
+            if (modelo.CambiaWhich(ref modelo) == 2)
             {
-                this.listaC = apiService.ProductosHogar();
-                this.Lista = new ObservableCollection<ListaItemViewModel>(
-                    this.ToListaViewModel());
+                this.listaC = (List<Lote>)apiService.ProductosBano();
+                this.Lista = new ObservableCollection<Lote>(listaC);
                 this.IsRefreshing = false;
-            }
+            } else
+            if (modelo.CambiaWhich(ref modelo) == 3)
+            {
+                this.listaC = (List<Lote>)apiService.Abarroteria();
+                this.Lista = new ObservableCollection<Lote>(listaC);
+                this.IsRefreshing = false;
+            } else
+            if (modelo.CambiaWhich(ref modelo) == 4)
+            {
+                this.listaC = (List<Lote>)apiService.ProductosHogar();
+                this.Lista = new ObservableCollection<Lote>(listaC);
+                this.IsRefreshing = false;
+            }*/
         }
         #endregion
 
@@ -110,7 +124,7 @@ namespace App1.ViewModels
         {
             get
             {
-                return new RelayCommand(LoadArticulos);
+                return new RelayCommand(LoadListas);
             }
         }
 
@@ -126,11 +140,11 @@ namespace App1.ViewModels
         {
             if (string.IsNullOrEmpty(this.Filtro))
             {
-                this.Lista = new ObservableCollection<ListaItemViewModel>(this.ToListaViewModel());
+                this.Lista = new ObservableCollection<Lote>(this.ToListaViewModel());
             }
             else
             {
-                this.Lista = new ObservableCollection<ListaItemViewModel>(
+                this.Lista = new ObservableCollection<Lote>(
                     this.ToListaViewModel().Where(p => p.Descripcion.ToLower().Contains(this.Filtro.ToLower())));
             }
         }

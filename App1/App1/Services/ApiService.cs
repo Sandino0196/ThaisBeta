@@ -13,8 +13,8 @@ namespace App1.Services
             var lista = new List<Productos>();
             lista.Add(new Productos() { CodigoProducto = 1, Descripcion = "Dulces", Imagen = "DulcesLogo" });
             lista.Add(new Productos() { CodigoProducto = 2, Descripcion = "Producto Hogar", Imagen = "HogarLogo.jpg" });
-            lista.Add(new Productos() { CodigoProducto = 13, Descripcion = "Producto Personal", Imagen = "BanoLogo" });
-            lista.Add(new Productos() { CodigoProducto = 15, Descripcion = "Abarroteria", Imagen = "AbarroteriaLogo.jpg" });
+            lista.Add(new Productos() { CodigoProducto = 3, Descripcion = "Producto Personal", Imagen = "BanoLogo" });
+            lista.Add(new Productos() { CodigoProducto = 4, Descripcion = "Abarroteria", Imagen = "AbarroteriaLogo.jpg" });
             return lista;
         }
 

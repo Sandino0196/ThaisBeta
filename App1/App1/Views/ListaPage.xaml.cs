@@ -4,9 +4,9 @@ using Xamarin.Forms.Xaml;
 namespace App1.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ProductoPage : ContentPage
+	public partial class ListaPage : ContentPage
 	{
-		public ProductoPage ()
+		public ListaPage ()
 		{
             InitializeComponent();
         }
