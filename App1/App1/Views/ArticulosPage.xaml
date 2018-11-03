@@ -27,6 +27,11 @@
                         HorizontalOptions="End" HeightRequest="300" BorderRadius="20"
                         Command="{Binding AbarroteriaCommand}"/>
             </Grid>
+            <Label Text=" " HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            <Label Text=" " HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            <Label Text=" " HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            <Label Text=" " HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            <Image Source="thais" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="500"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

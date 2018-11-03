@@ -16,7 +16,7 @@
             </SearchBar>
             <ListView HasUnevenRows="True" IsPullToRefreshEnabled="True" ItemsSource="{Binding Lista}"
                       IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}" RefreshCommand="{Binding RefreshCommand}"
-                      SeparatorVisibility="None">
+                      SeparatorVisibility="None" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -27,7 +27,7 @@
                                 </Grid.ColumnDefinitions>
                                 <StackLayout Grid.Column="0" VerticalOptions="Center">
                                     <Label FontSize="Large" FontAttributes="Bold" Text="{Binding Descripcion}" TextColor="Black"></Label>
-                                    <Label FontSize="Large" Text="{Binding Lista.DescripcioLote}" TextColor="Black"></Label>
+                                    <Label FontSize="Medium" Text="{Binding DescripcionLote}" TextColor="Black"></Label>
                                 </StackLayout>
                                 <Image Grid.Column="1" Source="{Binding Imagen}" HeightRequest="100" HorizontalOptions="End"></Image>
                             </Grid>
