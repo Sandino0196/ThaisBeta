@@ -90,7 +90,7 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 237, Descripcion = "Suavitel Toronja y Flor de Cereza", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 238, Descripcion = "Suavitel Primavera", Imagen = "GlobosLogo", DescripcionLote = "4 unidades de 3 Litros por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 239, Descripcion = "Suavitel Aroma de Sol", Imagen = "GlobosLogo", DescripcionLote = "4 unidades de 3 Litros por caja", Precio = 0 });
-            return lista
+            return lista;
         }
 
         public List<Lote> ProductosBano()
