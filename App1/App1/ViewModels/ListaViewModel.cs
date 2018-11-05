@@ -62,8 +62,6 @@ namespace App1.ViewModels
         }
         #endregion
 
-
-
         #region Metodos
         public virtual IEnumerable<ListaItemViewModel> ToListaViewModel()
         {

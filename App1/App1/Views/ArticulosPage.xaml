@@ -3,35 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.ArticulosPage"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
-             BackgroundColor="WhiteSmoke"
+             BackgroundColor="White"
              Title="Thais Comercial - Inicio">
     <ContentPage.Content>
-        <StackLayout BindingContext="{Binding Articulos}">
-            <Grid HorizontalOptions="Center" BackgroundColor="GhostWhite">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Button Grid.Column="0" Grid.Row="0" Image="DulceLogo" HorizontalOptions="Start"
-                        HeightRequest="300" BorderRadius="20" Command="{Binding DulceCommand}"/>
-                <Button Image="HigieneLogo" Grid.Column="1" Grid.Row="0"
-                        HorizontalOptions="End" HeightRequest="300" BorderRadius="20"
+        <ScrollView>
+            <StackLayout BindingContext="{Binding Articulos}">
+                <Grid HorizontalOptions="Center" BackgroundColor="GhostWhite">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Column="0" Grid.Row="0" Image="DulceLogo" HorizontalOptions="Start"
+                        BorderRadius="20" Command="{Binding DulceCommand}"/>
+                    <Button Image="HigieneLogo" Grid.Column="1" Grid.Row="0"
+                        HorizontalOptions="End" BorderRadius="20"
                         Command="{Binding HigieneCommand}"/>
-                <Button Image="HogarLogo" Grid.Column="0" Grid.Row="1" HorizontalOptions="Start"
-                        HeightRequest="300" BorderRadius="20" Command="{Binding HogarCommand}"/>
-                <Button Image="AbarroteriaLogo" Grid.Column="1" Grid.Row="1" 
-                        HorizontalOptions="End" HeightRequest="300" BorderRadius="20"
+                    <Button Image="HogarLogo" Grid.Column="0" Grid.Row="1" HorizontalOptions="Start"
+                         BorderRadius="20" Command="{Binding HogarCommand}"/>
+                    <Button Image="AbarroteriaLogo" Grid.Column="1" Grid.Row="1" 
+                        HorizontalOptions="End" BorderRadius="20"
                         Command="{Binding AbarroteriaCommand}"/>
-            </Grid>
-            <Label Text=" " HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
-            <Label Text=" " HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
-            <Label Text=" " HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
-            <Label Text=" " HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
-            <Image Source="thais" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="500"/>
-        </StackLayout>
+                </Grid>
+                <Label Text=" "></Label>
+                <Label Text=" "></Label>
+                <Image Source="thais" WidthRequest="500"
+                     HorizontalOptions="Center" VerticalOptions="Center"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

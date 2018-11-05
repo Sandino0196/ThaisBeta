@@ -21,39 +21,40 @@ namespace App1.Services
         public List<Lote> ProductosDulce()
         {
             var lista = new List<Lote>();
-            lista.Add(new Lote() { CodigoProducto = 101, Descripcion = "Chicle Vitolero", Imagen = "GlobosLogo" ,DescripcionLote = "9 botes, 120 unidades c/u", Precio=0 });
-            lista.Add(new Lote() { CodigoProducto = 102, Descripcion = "Milky Way Minis", Imagen = "MiniMilky", DescripcionLote = "12 botes, 52 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 103, Descripcion = "M&M's Minis", Imagen = "MiniMM", DescripcionLote = "12 botes, 52 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 104, Descripcion = "Snickers Barras", Imagen = "GlobosLogo", DescripcionLote = "8 displays, 52 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 105, Descripcion = "Crayon Manzana", Imagen = "CrayonVerde", DescripcionLote = "12 paquetes, 10 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 106, Descripcion = "Crayon Mango", Imagen = "CrayonAmarillo", DescripcionLote = "12 paquetes, 10 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 107, Descripcion = "Crayon Fresa", Imagen = "CrayonRojo", DescripcionLote = "12 paquetes, 10 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 108, Descripcion = "Crayon Uva", Imagen = "CrayonMorado", DescripcionLote = "12 paquetes, 10 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 109, Descripcion = "Pachicleta", Imagen = "Pachicleta", DescripcionLote = "10 unidades Ristra", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 110, Descripcion = "Pachicleta", Imagen = "Pachicleta", DescripcionLote = "20 unidades Bolsa", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 111, Descripcion = "Trident Cool Bubble", Imagen = "GlobosLogo", DescripcionLote = "12 paquetes, 12 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 112, Descripcion = "Trident Fresh Mint", Imagen = "GlobosLogo", DescripcionLote = "12 paquetes, 12 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 113, Descripcion = "Trident Menta", Imagen = "GlobosLogo", DescripcionLote = "12 paquetes, 12 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 114, Descripcion = "Trident Sandia", Imagen = "TridentSandia", DescripcionLote = "12 paquetes, 12 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 115, Descripcion = "Trident Yerbabuena", Imagen = "GlobosLogo", DescripcionLote = "12 paquetes, 12 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 116, Descripcion = "Trident Fresa", Imagen = "GlobosLogo", DescripcionLote = "30 paquetes, 18 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 117, Descripcion = "Trident Fresa/Frutilla y Limon", Imagen = "TridentFreLi", DescripcionLote = "10 paquetes, 18 displays c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 118, Descripcion = "Trident Menta y Vainilla", Imagen = "TridentVaiMe", DescripcionLote = "10 paquetes, 18 displays c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 119, Descripcion = "Trident Uva y Naranja", Imagen = "GlobosLogo", DescripcionLote = "10 paquetes, 18 displays c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 101, Descripcion = "Chicle Vitolero", Imagen = "ChicleV" ,DescripcionLote = "9 botes, 120 unidades c/u", Precio=0 });
+            lista.Add(new Lote() { CodigoProducto = 102, Descripcion = "Milky Way Minis", Imagen = "MilkyMini", DescripcionLote = "12 botes, 52 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 103, Descripcion = "M&M's Minis", Imagen = "MMMini", DescripcionLote = "12 botes, 52 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 104, Descripcion = "Snickers Minis", Imagen = "SnicMini", DescripcionLote = "12 botes, 52 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 105, Descripcion = "Snickers Barras", Imagen = "Snic", DescripcionLote = "8 displays, 52 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 106, Descripcion = "Crayon Manzana", Imagen = "Manzana", DescripcionLote = "12 paquetes, 10 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 107, Descripcion = "Crayon Mango", Imagen = "Mango", DescripcionLote = "12 paquetes, 10 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 108, Descripcion = "Crayon Fresa", Imagen = "FresaC", DescripcionLote = "12 paquetes, 10 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 109, Descripcion = "Crayon Uva", Imagen = "Uva", DescripcionLote = "12 paquetes, 10 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 110, Descripcion = "Pachicleta", Imagen = "Pac10", DescripcionLote = "10 unidades Ristra", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 111, Descripcion = "Pachicleta", Imagen = "Pac20", DescripcionLote = "20 unidades Bolsa", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 112, Descripcion = "Trident Cool Bubble", Imagen = "CoolB", DescripcionLote = "12 paquetes, 12 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 113, Descripcion = "Trident Fresh Mint", Imagen = "FreshM", DescripcionLote = "12 paquetes, 12 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 114, Descripcion = "Trident Menta", Imagen = "Menta", DescripcionLote = "12 paquetes, 12 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 115, Descripcion = "Trident Sandia", Imagen = "Sandia", DescripcionLote = "12 paquetes, 12 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 116, Descripcion = "Trident Yerbabuena", Imagen = "Yerba", DescripcionLote = "12 paquetes, 12 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 117, Descripcion = "Trident Fresa", Imagen = "FresaT", DescripcionLote = "30 paquetes, 18 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 118, Descripcion = "Trident Fresa/Frutilla y Limon", Imagen = "FresaLim", DescripcionLote = "10 paquetes, 18 displays c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 119, Descripcion = "Trident Menta y Vainilla", Imagen = "MentaVai", DescripcionLote = "10 paquetes, 18 displays c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 120, Descripcion = "Trident Uva y Naranja", Imagen = "UvaNar", DescripcionLote = "10 paquetes, 18 displays c/u", Precio = 0 });
             return lista;
         }
 
         public List<Lote> ProductosHogar()
         {
             var lista = new List<Lote>();
-            lista.Add(new Lote() { CodigoProducto = 201, Descripcion = "Glade Jardin Campestre", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 202, Descripcion = "Glade Hawaiian Breeze", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 203, Descripcion = "Glade Campos de Lavanda", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 204, Descripcion = "Glade Manzana y Canela", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 205, Descripcion = "Glade Frescura Matinal", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 206, Descripcion = "Glade Floral Perfection", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 207, Descripcion = "Glade Vainilla", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 208, Descripcion = "Baygon Ultra", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 201, Descripcion = "Glade Jardin Campestre", Imagen = "GladeCamp", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 202, Descripcion = "Glade Hawaiian Breeze", Imagen = "GladeHawai", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 203, Descripcion = "Glade Campos de Lavanda", Imagen = "GladeLavanda", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 204, Descripcion = "Glade Manzana y Canela", Imagen = "GladeManzana", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 205, Descripcion = "Glade Frescura Matinal", Imagen = "GladeMatinal", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 206, Descripcion = "Glade Floral Perfection", Imagen = "GladeFloral", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 207, Descripcion = "Glade Vainilla", Imagen = "GladeVainilla", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 208, Descripcion = "Baygon Ultra", Imagen = "Baygon", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 209, Descripcion = "Oko Multiusos", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 200ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 210, Descripcion = "Oko Multiusos", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 211, Descripcion = "Raid MAX", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });

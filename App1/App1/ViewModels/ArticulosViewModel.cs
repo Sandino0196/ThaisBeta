@@ -58,10 +58,6 @@ namespace App1.ViewModels
         }
         #endregion
 
-        #region Metodos
-
-        #endregion
-
         #region Comandos
         public ICommand DulceCommand
         {
