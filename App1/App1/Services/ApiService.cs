@@ -54,38 +54,43 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 205, Descripcion = "Glade Frescura Matinal", Imagen = "GladeMatinal", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 206, Descripcion = "Glade Floral Perfection", Imagen = "GladeFloral", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 207, Descripcion = "Glade Vainilla", Imagen = "GladeVainilla", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+
             lista.Add(new Lote() { CodigoProducto = 208, Descripcion = "Baygon Ultra", Imagen = "Baygon", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 209, Descripcion = "Oko Multiusos", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 200ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 210, Descripcion = "Oko Multiusos", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 211, Descripcion = "Raid MAX", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 212, Descripcion = "Raid Casa y Jardin", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 213, Descripcion = "Raid Mata Moscas y Mosquitos", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 214, Descripcion = "Raid Mata Cucarachas, Moscas y Mosquitos", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 301, Descripcion = "Downy Romance", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 302, Descripcion = "Downy Elegance", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 303, Descripcion = "Downy Floral", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 304, Descripcion = "Downy Naturals", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 305, Descripcion = "Downy Passion", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 306, Descripcion = "Downy Brisca Fresca", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 307, Descripcion = "Downy Pureza Silvestre", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 308, Descripcion = "Downy Durazno", Imagen = "GlobosLogo", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 309, Descripcion = "Downy Elegance", Imagen = "GlobosLogo", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 310, Descripcion = "Downy Passion", Imagen = "GlobosLogo", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 311, Descripcion = "Downy Tango", Imagen = "GlobosLogo", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 312, Descripcion = "Downy Floral", Imagen = "GlobosLogo", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 313, Descripcion = "Downy Brisa Fresca", Imagen = "GlobosLogo", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 314, Descripcion = "Downy Flor de Luna", Imagen = "GlobosLogo", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 315, Descripcion = "Downy Pureza Silvestre", Imagen = "GlobosLogo", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 316, Descripcion = "Downy Floral", Imagen = "GlobosLogo", DescripcionLote = "8.5 Litros por unidad", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 401, Descripcion = "Suavitel Fresa y Chocolate", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 402, Descripcion = "Suavitel Aqua", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 850ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 403, Descripcion = "Suavitel Abrazo de sol", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 404, Descripcion = "Suavitel Aroma de Durazno", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 850ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 405, Descripcion = "Suavitel Orquideas Blancas", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 850ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 406, Descripcion = "Suavitel Toronja y Flor de Cereza", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 407, Descripcion = "Suavitel Primavera", Imagen = "GlobosLogo", DescripcionLote = "4 unidades de 3 Litros por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 408, Descripcion = "Suavitel Aroma de Sol", Imagen = "GlobosLogo", DescripcionLote = "4 unidades de 3 Litros por caja", Precio = 0 });
-            return lista;
+            lista.Add(new Lote() { CodigoProducto = 209, Descripcion = "Oko Multiusos", Imagen = "okoPe", DescripcionLote = "12 unidades de 200ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 210, Descripcion = "Oko Multiusos", Imagen = "okoGra", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+
+            lista.Add(new Lote() { CodigoProducto = 211, Descripcion = "Raid MAX", Imagen = "RaidMax", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 212, Descripcion = "Raid Casa y Jardin", Imagen = "RaidCasa", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 213, Descripcion = "Raid Mata Moscas y Mosquitos", Imagen = "RaidMos", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 214, Descripcion = "Raid Mata Cucarachas, Moscas y Mosquitos", Imagen = "RaidCuca", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+
+            lista.Add(new Lote() { CodigoProducto = 215, Descripcion = "Downy Elegance", Imagen = "DownyEleP", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 216, Descripcion = "Downy Floral", Imagen = "DownyFloralP", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 217, Descripcion = "Downy Naturals", Imagen = "DownyNatP", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 218, Descripcion = "Downy Pureza Silvestre", Imagen = "DownyPurG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 219, Descripcion = "Downy Passion", Imagen = "DownyPassP", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 220, Descripcion = "Downy Romance", Imagen = "DownyyRomG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 221, Descripcion = "Downy Brisa Fresca", Imagen = "DownyBrisP", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 222, Descripcion = "Downy Brisa Fresca", Imagen = "DownyBrisG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 223, Descripcion = "Downy Flor de Luna", Imagen = "DownyFlorG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 224, Descripcion = "Downy Romance", Imagen = "DownyRomP", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 225, Descripcion = "Downy Pureza Silvestre", Imagen = "DownyPurP", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 226, Descripcion = "Downy Durazno", Imagen = "DownyDurG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 227, Descripcion = "Downy Elegance", Imagen = "DownyEleG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 228, Descripcion = "Downy Passion", Imagen = "DownyPassG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 229, Descripcion = "Downy Tango", Imagen = "DownyTangoG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 230, Descripcion = "Downy Floral", Imagen = "DownyFloralG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 231, Descripcion = "Downy Floral", Imagen = "DownyFloralXXL", DescripcionLote = "8.5 Litros por unidad", Precio = 0 });
+
+            lista.Add(new Lote() { CodigoProducto = 232, Descripcion = "Suavitel Fresa y Chocolate", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 233, Descripcion = "Suavitel Aqua", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 850ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 234, Descripcion = "Suavitel Abrazo de sol", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 235, Descripcion = "Suavitel Aroma de Durazno", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 850ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 236, Descripcion = "Suavitel Orquideas Blancas", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 850ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 237, Descripcion = "Suavitel Toronja y Flor de Cereza", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 238, Descripcion = "Suavitel Primavera", Imagen = "GlobosLogo", DescripcionLote = "4 unidades de 3 Litros por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 239, Descripcion = "Suavitel Aroma de Sol", Imagen = "GlobosLogo", DescripcionLote = "4 unidades de 3 Litros por caja", Precio = 0 });
+            return lista
         }
 
         public List<Lote> ProductosBano()
