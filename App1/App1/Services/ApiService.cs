@@ -230,22 +230,22 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 1028, Descripcion = "Shampoo Sedal Bombaa Argan", Imagen = "SedalShampooBAP", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1029, Descripcion = "Shampoo Sedal Hidratacion Ligera", Imagen = "SedalShampooHLP", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
 
-            lista.Add(new Lote() { CodigoProducto = 1101, Descripcion = "Shampoo Caprice Anticaspa", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 1102, Descripcion = "Shampoo Caprice Anticerami", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 1103, Descripcion = "Shampoo Caprice Biotina", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 1104, Descripcion = "Shampoo Caprice Control Caida", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 1105, Descripcion = "Shampoo Caprice Herbal", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 1106, Descripcion = "Shampoo Caprice Maxigloss", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 1107, Descripcion = "Shampoo Caprice Proteccion y Crecimiento", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1101, Descripcion = "Shampoo Caprice Anticaspa", Imagen = "CapriceCaspa", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1102, Descripcion = "Shampoo Caprice Anticerami", Imagen = "CapriceAntiC", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1103, Descripcion = "Shampoo Caprice Biotina", Imagen = "CapriceBiotina", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1104, Descripcion = "Shampoo Caprice Control Caida", Imagen = "CapriceCC", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1105, Descripcion = "Shampoo Caprice Herbal", Imagen = "CapriceHerbal", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1106, Descripcion = "Shampoo Caprice Maxigloss", Imagen = "CapriceMaxi", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1107, Descripcion = "Shampoo Caprice Proteccion y Crecimiento", Imagen = "CapricePC", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
 
-            lista.Add(new Lote() { CodigoProducto = 1201, Descripcion = "Shampoo Savile Chile", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 1202, Descripcion = "Shampoo Savile Biotina", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 1203, Descripcion = "Shampoo Savile Aceite de Argan", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 1204, Descripcion = "Shampoo Savile Keratina", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 1205, Descripcion = "Shampoo Savile Miel 2 en 1", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 1206, Descripcion = "Shampoo Savile Colageno", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 1207, Descripcion = "Shampoo Savile Rizos Radiantes", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 1208, Descripcion = "Shampoo Savile Aguacate", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1201, Descripcion = "Shampoo Savile Chile", Imagen = "SavileChile", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1202, Descripcion = "Shampoo Savile Biotina", Imagen = "SavileBiotina", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1203, Descripcion = "Shampoo Savile Aceite de Argan", Imagen = "SavileAA", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1204, Descripcion = "Shampoo Savile Keratina", Imagen = "SavileKeratina", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1205, Descripcion = "Shampoo Savile Miel 2 en 1", Imagen = "SavileMiel", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1206, Descripcion = "Shampoo Savile Colageno", Imagen = "SavileColageno", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1207, Descripcion = "Shampoo Savile Rizos Radiantes", Imagen = "SavileRR", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 1208, Descripcion = "Shampoo Savile Aguacate", Imagen = "SavileAguacate", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
 
             lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Jabon Palmolive Aloe", Imagen = "GlobosLogo", DescripcionLote = "72 unidades de 160 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1302, Descripcion = "Jabon Palmolive Fusion Nutritiva", Imagen = "GlobosLogo", DescripcionLote = "72 unidades de 180 gramos por caja", Precio = 0 });
