@@ -23,7 +23,7 @@ namespace App1.Services
             var lista = new List<Lote>();
             lista.Add(new Lote() { CodigoProducto = 101, Descripcion = "Chicle Vitolero", Imagen = "ChicleV" ,DescripcionLote = "9 botes, 120 unidades c/u", Precio=0 });
             lista.Add(new Lote() { CodigoProducto = 102, Descripcion = "Milky Way Minis", Imagen = "MilkyMini", DescripcionLote = "12 botes, 52 unidades c/u", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 103, Descripcion = "M&M's Minis", Imagen = "MMMini", DescripcionLote = "12 botes, 52 unidades c/u", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 103, Descripcion = "M&M's Minis", Imagen = "MMMinis", DescripcionLote = "12 botes, 52 unidades c/u", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 104, Descripcion = "Snickers Minis", Imagen = "SnicMini", DescripcionLote = "12 botes, 52 unidades c/u", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 105, Descripcion = "Snickers Barras", Imagen = "Snic", DescripcionLote = "8 displays, 52 unidades c/u", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 106, Descripcion = "Crayon Manzana", Imagen = "Manzana", DescripcionLote = "12 paquetes, 10 unidades c/u", Precio = 0 });
@@ -69,7 +69,7 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 217, Descripcion = "Downy Naturals", Imagen = "DownyNatP", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 218, Descripcion = "Downy Pureza Silvestre", Imagen = "DownyPurG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 219, Descripcion = "Downy Passion", Imagen = "DownyPassP", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 220, Descripcion = "Downy Romance", Imagen = "DownyyRomG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 220, Descripcion = "Downy Romance", Imagen = "DownyRomG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 221, Descripcion = "Downy Brisa Fresca", Imagen = "DownyBrisP", DescripcionLote = "12 unidades de 800ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 222, Descripcion = "Downy Brisa Fresca", Imagen = "DownyBrisG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 223, Descripcion = "Downy Flor de Luna", Imagen = "DownyFlorG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
@@ -82,72 +82,81 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 230, Descripcion = "Downy Floral", Imagen = "DownyFloralG", DescripcionLote = "6 unidades de 3 Litros por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 231, Descripcion = "Downy Floral", Imagen = "DownyFloralXXL", DescripcionLote = "8.5 Litros por unidad", Precio = 0 });
 
-            lista.Add(new Lote() { CodigoProducto = 232, Descripcion = "Suavitel Fresa y Chocolate", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 233, Descripcion = "Suavitel Aqua", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 850ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 234, Descripcion = "Suavitel Abrazo de sol", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 235, Descripcion = "Suavitel Aroma de Durazno", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 850ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 236, Descripcion = "Suavitel Orquideas Blancas", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 850ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 237, Descripcion = "Suavitel Toronja y Flor de Cereza", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 238, Descripcion = "Suavitel Primavera", Imagen = "GlobosLogo", DescripcionLote = "4 unidades de 3 Litros por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 239, Descripcion = "Suavitel Aroma de Sol", Imagen = "GlobosLogo", DescripcionLote = "4 unidades de 3 Litros por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 232, Descripcion = "Suavitel Fresa y Chocolate", Imagen = "SuaviFresa", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 233, Descripcion = "Suavitel Aqua", Imagen = "SuaviAqua", DescripcionLote = "12 unidades de 850ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 234, Descripcion = "Suavitel Abrazo de sol", Imagen = "SuaviAbrazo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 235, Descripcion = "Suavitel Aroma de Durazno", Imagen = "SuaviDur", DescripcionLote = "12 unidades de 850ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 236, Descripcion = "Suavitel Orquideas Blancas", Imagen = "SuaviOrquidea", DescripcionLote = "12 unidades de 850ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 237, Descripcion = "Suavitel Toronja y Flor de Cereza", Imagen = "SuaviToronja", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 238, Descripcion = "Suavitel Primavera", Imagen = "SuaviPrima", DescripcionLote = "4 unidades de 3 Litros por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 239, Descripcion = "Suavitel Aroma de Sol", Imagen = "SuaviSol", DescripcionLote = "4 unidades de 3 Litros por caja", Precio = 0 });
             return lista;
         }
 
         public List<Lote> ProductosBano()
         {
             var lista = new List<Lote>();
-            lista.Add(new Lote() { CodigoProducto = 501, Descripcion = "Axe Black Night", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 502, Descripcion = "Axe Dark Temptation", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 503, Descripcion = "Axe Anarchy", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 504, Descripcion = "Axe Black", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 505, Descripcion = "Axe Collision", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 506, Descripcion = "Axe Gold Temptation", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 507, Descripcion = "Axe Excite", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 508, Descripcion = "Axe You", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 509, Descripcion = "Axe Conviction", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 510, Descripcion = "Axe Kilo + 25", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 115ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 511, Descripcion = "Axe Collision + 25", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 115ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 512, Descripcion = "Axe Young", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 513, Descripcion = "Axe Anarchy for Her", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 514, Descripcion = "Axe Dark Temptation Seco", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 515, Descripcion = "Axe Black Seco", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 516, Descripcion = "Axe Adrenaline", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 517, Descripcion = "Axe Gold Temptation Seco", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 518, Descripcion = "Axe Anarchy for Her + 25", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 115ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 519, Descripcion = "Axe Apollo", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 520, Descripcion = "Axe You", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 521, Descripcion = "Axe Black", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 522, Descripcion = "Axe Collision", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 523, Descripcion = "Axe Dark Temptation", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 524, Descripcion = "Axe Excite", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 525, Descripcion = "Axe Gold", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 526, Descripcion = "Axe Kilo", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 527, Descripcion = "Axe Dark Temptation Value Pack", Imagen = "GlobosLogo", DescripcionLote = "18 unidades de 90ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 601, Descripcion = "Rexona Cobalt Dry", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 602, Descripcion = "Rexona Super Hero", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 603, Descripcion = "Rexona Antibacterial", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 604, Descripcion = "Rexona Invisible", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 605, Descripcion = "Rexona V8", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 606, Descripcion = "Rexona Active Amotion", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 105 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 607, Descripcion = "Rexona Extra Fresh", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 608, Descripcion = "Rexona Sexy Bouquet", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 609, Descripcion = "Rexona Antibacterial", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 610, Descripcion = "Rexona Antibacterial", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 611, Descripcion = "Rexona Powder Dry", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 612, Descripcion = "Rexona Bamboo", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 613, Descripcion = "Rexona Active Motion", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 614, Descripcion = "Rexona Invisible", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 615, Descripcion = "Rexona Nutritive", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 616, Descripcion = "Rexona Extra Fresh", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 617, Descripcion = "Rexona Xtra Cool", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 618, Descripcion = "Rexona V8", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 619, Descripcion = "Rexona Antibacterial", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 620, Descripcion = "Rexona Active Dry", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 621, Descripcion = "Rexona Fanatics", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 622, Descripcion = "Rexona Sensitive", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 623, Descripcion = "Rexona Super Hero", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 624, Descripcion = "Rexona Invisible", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 625, Descripcion = "Rexona Antibacterial + Invisible", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 501, Descripcion = "Axe Black Night", Imagen = "AxeBN", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 502, Descripcion = "Axe Dark Temptation", Imagen = "AxeDT", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 503, Descripcion = "Axe Anarchy", Imagen = "AxeAnarchy", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 504, Descripcion = "Axe Black", Imagen = "AxeBlack", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 505, Descripcion = "Axe Collision", Imagen = "AxeCollision", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 506, Descripcion = "Axe Gold Temptation", Imagen = "AxeGT", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 507, Descripcion = "Axe Excite", Imagen = "AxeExcite", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 508, Descripcion = "Axe You", Imagen = "AxeYou", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 509, Descripcion = "Axe Conviction", Imagen = "AxeConviction", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 510, Descripcion = "Axe Kilo + 25", Imagen = "AxeKilo25", DescripcionLote = "12 unidades de 115ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 511, Descripcion = "Axe Collision + 25", Imagen = "AxeCollision25", DescripcionLote = "12 unidades de 115ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 512, Descripcion = "Axe Young", Imagen = "AxeYoung", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 513, Descripcion = "Axe Anarchy for Her", Imagen = "AxeAnarchyM", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 514, Descripcion = "Axe Dark Temptation Seco", Imagen = "AxeDTSeco", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 515, Descripcion = "Axe Black Seco", Imagen = "AxeBlackSeco", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 516, Descripcion = "Axe Adrenaline", Imagen = "AxeAdrenaline", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 517, Descripcion = "Axe Gold Temptation Seco", Imagen = "AxeDTSeco", DescripcionLote = "12 unidades de 90ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 518, Descripcion = "Axe Anarchy for Her + 25", Imagen = "AxeAnarchyM25", DescripcionLote = "12 unidades de 115ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 519, Descripcion = "Axe Apollo", Imagen = "AxeApolloB", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 520, Descripcion = "Axe You", Imagen = "AxeYouB", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 521, Descripcion = "Axe Black", Imagen = "AxeBlackB", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 522, Descripcion = "Axe Collision", Imagen = "AxeCollisionB", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 523, Descripcion = "Axe Dark Temptation", Imagen = "AxeDTB", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 524, Descripcion = "Axe Excite", Imagen = "AxeExciteB", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 525, Descripcion = "Axe Gold", Imagen = "AxeGoldB", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 526, Descripcion = "Axe Kilo", Imagen = "AxeKiloB", DescripcionLote = "12 unidades de 54 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 527, Descripcion = "Axe Dark Temptation Value Pack", Imagen = "AxeDTPaquete", DescripcionLote = "18 unidades de 90ml por caja", Precio = 0 });
+
+            lista.Add(new Lote() { CodigoProducto = 601, Descripcion = "Rexona Cobalt Dry", Imagen = "RexonaCD", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 602, Descripcion = "Rexona Super Hero", Imagen = "RexonaSH", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 603, Descripcion = "Rexona Antibacterial + Invisible", Imagen = "RexonaAntiInvi", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 604, Descripcion = "Rexona Invisible", Imagen = "RexonaInvi", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 605, Descripcion = "Rexona V8", Imagen = "RexonaV8", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 606, Descripcion = "Rexona Active Emotion", Imagen = "RexonaAM", DescripcionLote = "12 unidades de 105 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 607, Descripcion = "Rexona Extra Fresh", Imagen = "RexonaEF", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 608, Descripcion = "Rexona Sexy Bouquet", Imagen = "RexonaSB", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 609, Descripcion = "Rexona Antibacterial", Imagen = "RexonaAnti", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 610, Descripcion = "Rexona Bamboo", Imagen = "RexonaBamboo", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 611, Descripcion = "Rexona Happy Morning", Imagen = "RexonaHM", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 612, Descripcion = "Rexona Invisible", Imagen = "RexonaInviM", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 613, Descripcion = "Rexona Powder Dry", Imagen = "RexonaPD", DescripcionLote = "12 unidades de 90 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 614, Descripcion = "Rexona Clinical Men", Imagen = "RexonaClinicalMen", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 615, Descripcion = "Rexona Clinical Classic", Imagen = "RexonaClinicalClassic", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 616, Descripcion = "Rexona Clinical Clen Scent", Imagen = "RexonaClinicalCS", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 617, Descripcion = "Rexona Antibacterial", Imagen = "RexonaAntiB", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 618, Descripcion = "Rexona Power Dry", Imagen = "RexonaPDB", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 619, Descripcion = "Rexona Bamboo", Imagen = "RexonaBambooB", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 620, Descripcion = "Rexona Active Emotion", Imagen = "RexonaAMB", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 621, Descripcion = "Rexona Invisible", Imagen = "RexonaInvisibleB", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 622, Descripcion = "Rexona Nutritive", Imagen = "RexonaNutritiveB", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 623, Descripcion = "Rexona Extra Fresh", Imagen = "RexonaEFB", DescripcionLote = "12 unidades de 48 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 624, Descripcion = "Rexona Xtra Cool", Imagen = "RexonaXCB", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 625, Descripcion = "Rexona V8", Imagen = "RexonaV8B", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 626, Descripcion = "Rexona Antibacterial", Imagen = "RexonaAntiHB", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 627, Descripcion = "Rexona Active Dry", Imagen = "RexonaADB", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 628, Descripcion = "Rexona Fanatics", Imagen = "RexonaFanaticsB", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 629, Descripcion = "Rexona Sensitive", Imagen = "RexonaSensitiveB", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 630, Descripcion = "Rexona Super Hero", Imagen = "RexonaSHB", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 631, Descripcion = "Rexona Invisible", Imagen = "RexonaInviB", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 632, Descripcion = "Rexona Antibacterial + Invisible", Imagen = "RexonaAntiInviB", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
+
             lista.Add(new Lote() { CodigoProducto = 701, Descripcion = "Acondicionador Dove Control Caida", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 702, Descripcion = "Acondicionador Dove Oleo Nutricion", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 703, Descripcion = "Acondicionador Dove Puntas Reconstruidas", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
@@ -163,6 +172,7 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 713, Descripcion = "Antitranspirante Dove Dermo Aclarant", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 96ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 714, Descripcion = "Antitranspirante Dove Original", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 96ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 715, Descripcion = "Antitranspirante Dove Go Fresh Pepino y Te Verde", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 96ml por caja", Precio = 0 });
+
             lista.Add(new Lote() { CodigoProducto = 801, Descripcion = "Shampoo Limpieza Renovadora", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 802, Descripcion = "Shampoo Proteccion Caida", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 803, Descripcion = "Shampoo Alivio Refrescante", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
@@ -172,6 +182,7 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 807, Descripcion = "Shampoo Fuerza Rejuvenecedora", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 808, Descripcion = "Shampoo Relax Control Comezon", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 809, Descripcion = "Shampoo Suave y Manejable", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+
             lista.Add(new Lote() { CodigoProducto = 901, Descripcion = "Shampoo Control Caida", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 902, Descripcion = "Shampoo Keratin Smooth", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 903, Descripcion = "Shampoo Rizos Perfectos", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
@@ -187,6 +198,7 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 913, Descripcion = "Acondicionador Repair Rituals", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 914, Descripcion = "Acondicionador Liso y Sedoso", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 915, Descripcion = "Acondicionador Split Remedy", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+
             lista.Add(new Lote() { CodigoProducto = 1001, Descripcion = "Acondicionador Sedal Caida", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1002, Descripcion = "Acondicionador Sedal Hidratacion Ligera", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1003, Descripcion = "Acondicionador Sedal Liso Perfecto", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
@@ -216,6 +228,7 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 1027, Descripcion = "Shampoo Sedal Miel y Germen de Trigo", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1028, Descripcion = "Shampoo Sedal Bombaa Argan", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1029, Descripcion = "Shampoo Sedal Hidratacion Ligera", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 340ml por caja", Precio = 0 });
+
             lista.Add(new Lote() { CodigoProducto = 1101, Descripcion = "Shampoo Caprice Anticaspa", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1102, Descripcion = "Shampoo Caprice Anticerami", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1103, Descripcion = "Shampoo Caprice Biotina", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
@@ -223,6 +236,7 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 1105, Descripcion = "Shampoo Caprice Herbal", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1106, Descripcion = "Shampoo Caprice Maxigloss", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1107, Descripcion = "Shampoo Caprice Proteccion y Crecimiento", Imagen = "GlobosLogo", DescripcionLote = "15 unidades de 220ml por caja", Precio = 0 });
+
             lista.Add(new Lote() { CodigoProducto = 1201, Descripcion = "Shampoo Savile Chile", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1202, Descripcion = "Shampoo Savile Biotina", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1203, Descripcion = "Shampoo Savile Aceite de Argan", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
@@ -231,6 +245,7 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 1206, Descripcion = "Shampoo Savile Colageno", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1207, Descripcion = "Shampoo Savile Rizos Radiantes", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1208, Descripcion = "Shampoo Savile Aguacate", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
+
             lista.Add(new Lote() { CodigoProducto = 1301, Descripcion = "Jabon Palmolive Aloe", Imagen = "GlobosLogo", DescripcionLote = "72 unidades de 160 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1302, Descripcion = "Jabon Palmolive Fusion Nutritiva", Imagen = "GlobosLogo", DescripcionLote = "72 unidades de 180 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 1303, Descripcion = "Jabon Palmolive Hidratacion Radiante", Imagen = "GlobosLogo", DescripcionLote = "72 unidades de 180 gramos por caja", Precio = 0 });
