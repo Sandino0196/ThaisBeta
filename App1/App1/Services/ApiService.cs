@@ -157,31 +157,32 @@ namespace App1.Services
             lista.Add(new Lote() { CodigoProducto = 631, Descripcion = "Rexona Invisible", Imagen = "RexonaInviB", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 632, Descripcion = "Rexona Antibacterial + Invisible", Imagen = "RexonaAntiInviB", DescripcionLote = "12 unidades de 50 gramos por caja", Precio = 0 });
 
-            lista.Add(new Lote() { CodigoProducto = 701, Descripcion = "Acondicionador Dove Control Caida", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 702, Descripcion = "Acondicionador Dove Oleo Nutricion", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 703, Descripcion = "Acondicionador Dove Puntas Reconstruidas", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 704, Descripcion = "Acondicionador Dove Reconstruccion Completa", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 705, Descripcion = "Shampoo Dove Control Caida", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 706, Descripcion = "Shampoo Dove Oleo Nutricion", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 707, Descripcion = "Shampoo Dove Puntas Reconstruidas", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 708, Descripcion = "Shampoo Dove Reconstruccion Completa", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 709, Descripcion = "Antitranspirante Dove Clear Tone", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 45 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 710, Descripcion = "Antitranspirante Dove Dermo Aclarant", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 45 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 711, Descripcion = "Antitranspirante Dove Original", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 45 gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 712, Descripcion = "Antitranspirante Dove Clear Tone", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 96ml gramos por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 713, Descripcion = "Antitranspirante Dove Dermo Aclarant", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 96ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 714, Descripcion = "Antitranspirante Dove Original", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 96ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 715, Descripcion = "Antitranspirante Dove Go Fresh Pepino y Te Verde", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 96ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 701, Descripcion = "Acondicionador Dove Control Caida", Imagen = "DoveAcondicionadorCC", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 702, Descripcion = "Acondicionador Dove Oleo Nutricion", Imagen = "DoveAcondicionadorON", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 703, Descripcion = "Acondicionador Dove Puntas Reconstruidas", Imagen = "DoveAcondicionadorPR", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 704, Descripcion = "Acondicionador Dove Reconstruccion Completa", Imagen = "DoveAcondicionadorRC", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 705, Descripcion = "Shampoo Dove Control Caida", Imagen = "DoveShampooCC", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 706, Descripcion = "Shampoo Dove Oleo Nutricion", Imagen = "DoveShampooON", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 707, Descripcion = "Shampoo Dove Puntas Reconstruidas", Imagen = "DoveShampooPR", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 708, Descripcion = "Shampoo Dove Reconstruccion Completa", Imagen = "DoveShampooRC", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
 
-            lista.Add(new Lote() { CodigoProducto = 801, Descripcion = "Shampoo Limpieza Renovadora", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 802, Descripcion = "Shampoo Proteccion Caida", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 803, Descripcion = "Shampoo Alivio Refrescante", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 804, Descripcion = "Shampoo con Old Spice", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 805, Descripcion = "Shampoo 3 en 1 Men", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 806, Descripcion = "Shampoo Manzana Fresh", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 807, Descripcion = "Shampoo Fuerza Rejuvenecedora", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 808, Descripcion = "Shampoo Relax Control Comezon", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
-            lista.Add(new Lote() { CodigoProducto = 809, Descripcion = "Shampoo Suave y Manejable", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 709, Descripcion = "Antitranspirante Dove Clear Tone", Imagen = "DoveCT", DescripcionLote = "12 unidades de 45 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 710, Descripcion = "Antitranspirante Dove Dermo Aclarant", Imagen = "DoveDA", DescripcionLote = "12 unidades de 45 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 711, Descripcion = "Antitranspirante Dove Original", Imagen = "DoveOriginal", DescripcionLote = "12 unidades de 45 gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 712, Descripcion = "Antitranspirante Dove Clear Tone", Imagen = "DoveCTS", DescripcionLote = "12 unidades de 96ml gramos por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 713, Descripcion = "Antitranspirante Dove Dermo Aclarant", Imagen = "DoveDAS", DescripcionLote = "12 unidades de 96ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 714, Descripcion = "Antitranspirante Dove Original", Imagen = "DoveOriginalS", DescripcionLote = "12 unidades de 96ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 715, Descripcion = "Antitranspirante Dove Go Fresh Pepino y Te Verde", Imagen = "DoveGoFresh", DescripcionLote = "12 unidades de 96ml por caja", Precio = 0 });
+
+            lista.Add(new Lote() { CodigoProducto = 801, Descripcion = "Shampoo H&S Limpieza Renovadora", Imagen = "HeadLR", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 802, Descripcion = "Shampoo H&S Proteccion Caida", Imagen = "HeadPC", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 803, Descripcion = "Shampoo H&S Alivio Refrescante", Imagen = "HeadAR", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 804, Descripcion = "Shampoo H&S con Old Spice", Imagen = "HeadOS", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 805, Descripcion = "Shampoo H&S 3 en 1 Men", Imagen = "Head3en1", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 806, Descripcion = "Shampoo H&S Manzana Fresh", Imagen = "HeadMF", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 807, Descripcion = "Shampoo H&S Fuerza Rejuvenecedora", Imagen = "HeadFR", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 808, Descripcion = "Shampoo H&S Relax Control Comezon", Imagen = "HeadRCC", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
+            lista.Add(new Lote() { CodigoProducto = 809, Descripcion = "Shampoo H&S Suave y Manejable", Imagen = "HeadSM", DescripcionLote = "12 unidades de 400ml por caja", Precio = 0 });
 
             lista.Add(new Lote() { CodigoProducto = 901, Descripcion = "Shampoo Control Caida", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
             lista.Add(new Lote() { CodigoProducto = 902, Descripcion = "Shampoo Keratin Smooth", Imagen = "GlobosLogo", DescripcionLote = "12 unidades de 750ml por caja", Precio = 0 });
