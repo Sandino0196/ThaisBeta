@@ -6,7 +6,7 @@ namespace App1.ViewModels
         #region ViewModels
         public LoginViewModel Login { get; set; }
         public ArticulosViewModel Articulos{ get; set; }
-        public ProductoViewModel Articulo { get; set; }
+        public ProductoViewModel Producto { get; set; }
         public ListaViewModel Listado { get; set; }
         #endregion
 

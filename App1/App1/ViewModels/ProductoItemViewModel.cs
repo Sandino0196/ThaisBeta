@@ -9,18 +9,18 @@ namespace App1.ViewModels
     public class ProductoItemViewModel:Lote
     {
         #region Comandos
-        public ICommand PresentarArticulo
+        public ICommand SelectProductoCommand
         {
             get
             {
-                return new RelayCommand(Presentar);
+                return new RelayCommand(SelectProducto);
             }
         }
 
-        private async void Presentar()
+        private async void SelectProducto()
         {
-            MainViewModel.GetInstance().Articulo = new ProductoViewModel(this);
-            await Application.Current.MainPage.Navigation.PushAsync(new ListaPage());
+            MainViewModel.GetInstance().Producto = new ProductoViewModel(this);
+            await Application.Current.MainPage.Navigation.PushAsync(new ProductoPage());
         }
         #endregion
     }

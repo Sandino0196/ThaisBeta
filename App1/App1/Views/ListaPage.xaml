@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.ListaPage"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
-             BackgroundColor="White"
-             Title="Productos - Thais">
+             BackgroundColor="Silver"
+             Title="Listado - Thais">
     <ContentPage.Content>
         <StackLayout Padding="5" BindingContext="{Binding Listado}">
             <SearchBar
@@ -16,21 +16,26 @@
             </SearchBar>
             <ListView HasUnevenRows="True" IsPullToRefreshEnabled="True" ItemsSource="{Binding Lista}"
                       IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}" RefreshCommand="{Binding RefreshCommand}"
-                      SeparatorVisibility="None">
+                      SeparatorVisibility="None" BackgroundColor="Silver">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                </Grid.ColumnDefinitions>
-                                <StackLayout Grid.Column="0" VerticalOptions="Center">
-                                    <Label FontSize="Large" FontAttributes="Bold" Text="{Binding Descripcion}" TextColor="Black"></Label>
-                                    <Label FontSize="Medium" Text="{Binding DescripcionLote}" TextColor="Black"></Label>
-                                </StackLayout>
-                                <Image Grid.Column="1" Source="{Binding Imagen}" HeightRequest="150" WidthRequest="150" HorizontalOptions="End"></Image>
-                            </Grid>
+                            <Frame Margin="5" CornerRadius="15" HasShadow="True">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding SelectProductoCommand}"/>
+                                </Frame.GestureRecognizers>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackLayout Grid.Column="0" VerticalOptions="Center">
+                                        <Label FontSize="Large" FontAttributes="Bold" Text="{Binding Descripcion}" TextColor="Black"></Label>
+                                        <Label FontSize="Medium" Text="{Binding DescripcionLote}" TextColor="Black"></Label>
+                                    </StackLayout>
+                                    <Image Grid.Column="1" Source="{Binding Imagen}" HeightRequest="150" WidthRequest="150" HorizontalOptions="End"></Image>
+                                </Grid>
+                            </Frame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

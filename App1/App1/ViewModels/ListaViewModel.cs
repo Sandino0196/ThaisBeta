@@ -12,7 +12,7 @@ namespace App1.ViewModels
     {
                 
         #region Atributos
-        private ObservableCollection<Lote> lista;
+        private ObservableCollection<ListaItemViewModel> lista;
         private bool isRefreshing;
         private ArticulosViewModel modelo = new ArticulosViewModel();
         private string filtro;
@@ -23,7 +23,7 @@ namespace App1.ViewModels
         #region Propiedades
         public Lote ListaArticulo { get; set; }
 
-        public ObservableCollection<Lote> Lista
+        public ObservableCollection<ListaItemViewModel> Lista
         {
             get { return this.lista; }
             set { setValue(ref this.lista, value); }
@@ -102,11 +102,11 @@ namespace App1.ViewModels
         {
             if (string.IsNullOrEmpty(this.Filtro))
             {
-                this.Lista = new ObservableCollection<Lote>(this.ToListaViewModel());
+                this.Lista = new ObservableCollection<ListaItemViewModel>(this.ToListaViewModel());
             }
             else
             {
-                this.Lista = new ObservableCollection<Lote>(
+                this.Lista = new ObservableCollection<ListaItemViewModel>(
                     this.ToListaViewModel().Where(p => p.Descripcion.ToLower().Contains(this.Filtro.ToLower())));
             }
         }

@@ -33,7 +33,7 @@ namespace App1.ViewModels
             }
 
             this.listaC = (List<Lote>)apiService.ProductosDulce();
-            this.Lista = new ObservableCollection<Lote>(listaC);
+            this.Lista = new ObservableCollection<ListaItemViewModel>();
             this.IsRefreshing = false;
         }
     }

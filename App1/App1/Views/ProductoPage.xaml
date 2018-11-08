@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.ProductoPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             BackgroundColor="Silver"
+             Title="Producto - Thais">
+    <ContentPage.Content>
+        <ScrollView BindingContext="{Binding Producto}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackLayout Padding="5">
+                    <Label Grid.Row="0" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Blue" Text="{Binding Producto.Descripcion}"/>
+                    <Image Grid.Row="1" Source="{Binding Producto.Imagen}" HorizontalOptions="Center" HeightRequest="200"/>
+                    <Label Text="{Binding Producto.DescripcionLote}" HorizontalOptions="Start" TextColor="Purple" FontSize="Large"/>
+                    <Label Text="{Binding Producto.Precio}" HorizontalOptions="Start" TextColor="Gray" FontSize="Medium"/>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -32,7 +32,7 @@ namespace App1.ViewModels
             }
 
             this.listaC = (List<Lote>)apiService.Abarroteria();
-            this.Lista = new ObservableCollection<Lote>(listaC);
+            this.Lista = new ObservableCollection<ListaItemViewModel>();
             this.IsRefreshing = false;
         }
     }
