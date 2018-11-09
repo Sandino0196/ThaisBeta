@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace App1.Models
 {
@@ -8,5 +7,6 @@ namespace App1.Models
     {
         public string DescripcionLote { get; set; }
         public double Precio { get; set; }
+        public bool isVisible { get; set; }
     }
 }

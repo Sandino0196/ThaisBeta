@@ -19,20 +19,11 @@ namespace App1.ViewModels
             this.ListaArticulo = articulo;
         }
 
-        public override async void LoadListas()
+        public override void LoadListas()
         {
             this.IsRefreshing = true;
-            var connection = await this.apiService.CheckConnection();
-            if (!connection.IsSuccess)
-            {
-                this.IsRefreshing = false;
-                await Application.Current.MainPage.DisplayAlert("Error", connection.Message, "Aceptar");
-                await Application.Current.MainPage.Navigation.PopAsync();
-                return;
-            }
-
-            this.listaC = (List<Lote>)apiService.Abarroteria();
-            this.Lista = new ObservableCollection<ListaItemViewModel>();
+            this.listaC = apiService.Abarroteria();
+            this.Lista = new ObservableCollection<ListaItemViewModel>(ToListaViewModel());
             this.IsRefreshing = false;
         }
     }

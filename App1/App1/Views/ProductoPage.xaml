@@ -3,22 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.ProductoPage"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
-             BackgroundColor="Silver"
+             BackgroundColor="White"
              Title="Producto - Thais">
     <ContentPage.Content>
         <ScrollView BindingContext="{Binding Producto}">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <StackLayout Padding="5">
-                    <Label Grid.Row="0" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Blue" Text="{Binding Producto.Descripcion}"/>
-                    <Image Grid.Row="1" Source="{Binding Producto.Imagen}" HorizontalOptions="Center" HeightRequest="200"/>
-                    <Label Text="{Binding Producto.DescripcionLote}" HorizontalOptions="Start" TextColor="Purple" FontSize="Large"/>
-                    <Label Text="{Binding Producto.Precio}" HorizontalOptions="Start" TextColor="Gray" FontSize="Medium"/>
-                </StackLayout>
-            </Grid>
+            <StackLayout Padding="5">
+                <Label FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Blue" Text="{Binding Articulo.Descripcion}"/>
+                <Image Source="{Binding Articulo.Imagen}" HorizontalOptions="Center"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Row="2" Grid.Column="0">
+                        <Label Text="Descripcion del Lote" HorizontalOptions="Start" TextColor="Black" FontSize="Large"/>
+                        <Label Text="{Binding Articulo.DescripcionLote}" HorizontalOptions="Start" TextColor="Purple" FontSize="Large" FontAttributes="Bold"/>
+                        <Label Text="Precio" HorizontalOptions="Start" TextColor="Black" FontSize="Large"/>
+                        <Label Text="{Binding Articulo.Precio}" HorizontalOptions="Start" TextColor="Gray" FontSize="Medium"/>
+                    </StackLayout>
+                    <Label Text="Cantidad" TextColor="Purple" FontSize="Large" Grid.Row="2" Grid.Column="2"/>
+                    <Button Text="+" WidthRequest="25" HeightRequest="25" BackgroundColor="Gray" BorderRadius="50" Grid.Row="3" Grid.Column="1"/>
+                    <Entry Text="1" Grid.Row="3" Grid.Column="2"/>
+                    <Button Text="-" WidthRequest="25" HeightRequest="25" BackgroundColor="Gray" BorderRadius="50" Grid.Row="3" Grid.Column="3"/>
+                </Grid>
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -1,9 +1,6 @@
-﻿using App1.Models;
-using App1.Services;
+﻿using App1.Services;
 using App1.Views;
 using GalaSoft.MvvmLight.Command;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -12,25 +9,11 @@ namespace App1.ViewModels
     public class ArticulosViewModel:BaseViewModel
     {
         #region Atributos
-        private ObservableCollection<ProductoItemViewModel> listadoProductos;
         private bool isRefreshing;
         private string filtro;
-        private List<Productos> listaP;
         #endregion
 
         #region Propiedades
-        public ObservableCollection<ProductoItemViewModel> ListadoProductos
-        {
-            get { return this.listadoProductos; }
-            set { setValue(ref this.listadoProductos, value); }
-        }
-
-        public List<Productos> ListaP
-        {
-             get { return this.listaP; }
-            set { setValue(ref this.listaP, value); }
-        }
-
         public bool IsRefreshing
         {
             get { return this.isRefreshing; }

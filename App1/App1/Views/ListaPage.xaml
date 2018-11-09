@@ -16,25 +16,41 @@
             </SearchBar>
             <ListView HasUnevenRows="True" IsPullToRefreshEnabled="True" ItemsSource="{Binding Lista}"
                       IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}" RefreshCommand="{Binding RefreshCommand}"
-                      SeparatorVisibility="None" BackgroundColor="Silver">
+                      SeparatorVisibility="None" BackgroundColor="Silver" SelectedItem="{Binding SelectedLote}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Frame Margin="5" CornerRadius="15" HasShadow="True">
-                                <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding SelectProductoCommand}"/>
-                                </Frame.GestureRecognizers>
-                                <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="Auto"/>
-                                    </Grid.ColumnDefinitions>
-                                    <StackLayout Grid.Column="0" VerticalOptions="Center">
-                                        <Label FontSize="Large" FontAttributes="Bold" Text="{Binding Descripcion}" TextColor="Black"></Label>
-                                        <Label FontSize="Medium" Text="{Binding DescripcionLote}" TextColor="Black"></Label>
-                                    </StackLayout>
-                                    <Image Grid.Column="1" Source="{Binding Imagen}" HeightRequest="150" WidthRequest="150" HorizontalOptions="End"></Image>
-                                </Grid>
+                                <StackLayout>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout Grid.Column="0">
+                                            <Label FontSize="Large" FontAttributes="Bold" Text="{Binding Descripcion}" TextColor="DarkBlue"></Label>
+                                            <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding DescripcionLote}" TextColor="Purple"></Label>
+                                        </StackLayout>
+                                        <Image Grid.Column="1" Grid.ColumnSpan="2" Source="{Binding Imagen}" HeightRequest="100" WidthRequest="100" HorizontalOptions="End"></Image>
+                                    </Grid>
+                                    <Grid BackgroundColor="LightBlue" IsVisible="{Binding IsVisible}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.5*"/>
+                                            <ColumnDefinition Width="0.5*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Row="0" Grid.Column="0" 
+                                               Text="{Binding Precio}" TextColor="Black" FontSize="Medium"/>
+                                        <Entry Grid.Row="0" Grid.Column="1" Keyboard="Numeric"
+                                               Text="{Binding Cantidad, Mode=TwoWay}" Placeholder="Cantidad"/>
+                                        <Button Grid.Row="0" Grid.Column="2" 
+                                                Text="Comprar" BackgroundColor="Gray" Grid.RowSpan="2"
+                                                HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding AgregarCommand}"/>
+                                    </Grid>
+                                </StackLayout>
                             </Frame>
                         </ViewCell>
                     </DataTemplate>

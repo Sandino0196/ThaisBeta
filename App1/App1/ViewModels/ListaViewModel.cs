@@ -3,18 +3,19 @@ using App1.Services;
 using GalaSoft.MvvmLight.Command;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Windows.Input;
 
 namespace App1.ViewModels
 {
-    public abstract class ListaViewModel: BaseViewModel
+    public abstract class ListaViewModel : BaseViewModel
     {
                 
         #region Atributos
         private ObservableCollection<ListaItemViewModel> lista;
         private bool isRefreshing;
-        private ArticulosViewModel modelo = new ArticulosViewModel();
+        private Lote selectedLote;
         private string filtro;
         public List<Lote> listaC;
         
@@ -22,6 +23,21 @@ namespace App1.ViewModels
 
         #region Propiedades
         public Lote ListaArticulo { get; set; }
+
+        public Lote PreviousSelectedLote { get; set; }
+
+        public Lote SelectedLote
+        {
+            get { return selectedLote; }
+            set
+            {
+                if(selectedLote != value)
+                {
+                    selectedLote = value;
+                    ExpandibleCollapseSelectedItem();
+                }
+            }
+        }
 
         public ObservableCollection<ListaItemViewModel> Lista
         {
@@ -63,6 +79,16 @@ namespace App1.ViewModels
         #endregion
 
         #region Metodos
+        private void ExpandibleCollapseSelectedItem()
+        {
+            if(PreviousSelectedLote != null)
+            {
+                Lista.Where(t => t.CodigoProducto == PreviousSelectedLote.CodigoProducto).FirstOrDefault().IsVisible = false;
+            }
+            Lista.Where(t => t.CodigoProducto == SelectedLote.CodigoProducto).FirstOrDefault().IsVisible = true;
+            PreviousSelectedLote = SelectedLote;
+        }
+
         public virtual IEnumerable<ListaItemViewModel> ToListaViewModel()
         {
             return this.listaC.Select(l => new ListaItemViewModel()
@@ -75,7 +101,7 @@ namespace App1.ViewModels
             });
         }
 
-        public virtual async void LoadListas()
+        public virtual void LoadListas()
         {
             
         }
