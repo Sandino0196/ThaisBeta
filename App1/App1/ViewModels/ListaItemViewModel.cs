@@ -11,14 +11,6 @@ namespace App1.ViewModels
     public class ListaItemViewModel:Lote , INotifyPropertyChanged
     {
         #region Comandos
-        public ICommand SelectProductoCommand
-        {
-            get
-            {
-                return new RelayCommand(Presentar);
-            }
-        }
-
         public bool IsVisible
         {
             get { return this.isVisible; }
@@ -37,12 +29,6 @@ namespace App1.ViewModels
         {
             PropertyChangedEventHandler handler = PropertyChanged;
             handler?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        public async void Presentar()
-        {
-            MainViewModel.GetInstance().Producto = new ProductoViewModel(this);
-            await Application.Current.MainPage.Navigation.PushAsync(new ProductoPage());
         }
         #endregion
     }

@@ -3,22 +3,20 @@ using App1.Services;
 using GalaSoft.MvvmLight.Command;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Linq;
 using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace App1.ViewModels
 {
     public abstract class ListaViewModel : BaseViewModel
     {
-                
         #region Atributos
         private ObservableCollection<ListaItemViewModel> lista;
         private bool isRefreshing;
         private Lote selectedLote;
         private string filtro;
         public List<Lote> listaC;
-        
         #endregion
 
         #region Propiedades
@@ -86,6 +84,7 @@ namespace App1.ViewModels
                 Lista.Where(t => t.CodigoProducto == PreviousSelectedLote.CodigoProducto).FirstOrDefault().IsVisible = false;
             }
             Lista.Where(t => t.CodigoProducto == SelectedLote.CodigoProducto).FirstOrDefault().IsVisible = true;
+            SelectedLote.Cantidad = 0;
             PreviousSelectedLote = SelectedLote;
         }
 
@@ -108,6 +107,26 @@ namespace App1.ViewModels
         #endregion
 
         #region Comandos
+        public ICommand AgregarCommand
+        {
+            get
+            {
+                return new RelayCommand(Add);
+            }
+        }
+
+        private async void Add()
+        {
+            await Application.Current.MainPage.DisplayAlert("Pucta", "Si sirvo :v", "Aceptar");
+            if (this.SelectedLote.Cantidad == 0)
+            {
+                await Application.Current.MainPage.DisplayAlert("Denegado", "Este elemento no ha sido agregado", "Aceptar");
+                return;
+            }
+            apiService.AgregarLote(SelectedLote);
+            await Application.Current.MainPage.DisplayAlert("Agregado", "Este elemento ha sido agregado", "Aceptar");
+        }
+
         public ICommand RefreshCommand
         {
             get

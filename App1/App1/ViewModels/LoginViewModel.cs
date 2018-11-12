@@ -3,6 +3,7 @@ using System.Windows.Input;
 using App1.Services;
 using App1.Views;
 using Xamarin.Forms;
+using App1.Models;
 
 namespace App1.ViewModels
 {
@@ -91,6 +92,7 @@ namespace App1.ViewModels
             this.Usuario = string.Empty;
             this.Password = string.Empty;
 
+            apiService.CrearPedido();
             MainViewModel.GetInstance().Articulos = new ArticulosViewModel();
             await Application.Current.MainPage.Navigation.PushAsync(new ArticulosPage());
         }

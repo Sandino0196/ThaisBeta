@@ -2,11 +2,35 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using App1.Models;
+using System.Collections;
 
 namespace App1.Services
 {
     public class ApiService
     {
+        Pedido actual;
+
+        public void CrearPedido()
+        {
+            actual = new Pedido();
+            actual = null;
+        }
+
+        public void AgregarLote(Lote lote)
+        {
+            actual.ProductosPedido.Add(lote);
+        }
+
+        public void EliminarLote(Lote lote)
+        {
+            for (int i = 0; i < actual.ProductosPedido.Count; i++)
+            {
+                if (actual.ProductosPedido.Equals(lote))
+                {
+                    actual.ProductosPedido.RemoveAt(i);
+                }
+            }
+        }
 
         public List<Productos> Catalogo()
         {
