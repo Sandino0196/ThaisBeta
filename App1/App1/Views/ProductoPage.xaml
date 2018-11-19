@@ -21,10 +21,6 @@
                         <Label Text="Precio" HorizontalOptions="Start" TextColor="Black" FontSize="Large"/>
                         <Label Text="{Binding Articulo.Precio}" HorizontalOptions="Start" TextColor="Gray" FontSize="Medium"/>
                     </StackLayout>
-                    <Label Text="Cantidad" TextColor="Purple" FontSize="Large" Grid.Row="2" Grid.Column="2"/>
-                    <Button Text="+" WidthRequest="25" HeightRequest="25" BackgroundColor="Gray" BorderRadius="50" Grid.Row="3" Grid.Column="1"/>
-                    <Entry Text="1" Grid.Row="3" Grid.Column="2"/>
-                    <Button Text="-" WidthRequest="25" HeightRequest="25" BackgroundColor="Gray" BorderRadius="50" Grid.Row="3" Grid.Column="3"/>
                 </Grid>
             </StackLayout>
         </ScrollView>

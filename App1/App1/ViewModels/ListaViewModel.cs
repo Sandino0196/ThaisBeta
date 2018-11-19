@@ -104,27 +104,45 @@ namespace App1.ViewModels
         {
             
         }
+
+        private async void Add()
+        {
+            await Application.Current.MainPage.DisplayAlert("Pucta", "Si sirvo :v", "Aceptar");
+            return;
+            /*if (int.Equals(this.SelectedLote.Cantidad, 0))
+            {
+                await Application.Current.MainPage.DisplayAlert("Denegado", "Ingrese una cantidad valida", "Aceptar");
+                return;
+            }
+            if (this.SelectedLote.Cantidad == 0)
+            {
+                
+            }
+            apiService.AgregarLote(SelectedLote);
+            await Application.Current.MainPage.DisplayAlert("Agregado", "Este elemento ha sido agregado", "Aceptar");*/
+        }
+
+        private void Search()
+        {
+            if (string.IsNullOrEmpty(this.Filtro))
+            {
+                this.Lista = new ObservableCollection<ListaItemViewModel>(this.ToListaViewModel());
+            }
+            else
+            {
+                this.Lista = new ObservableCollection<ListaItemViewModel>(
+                    this.ToListaViewModel().Where(p => p.Descripcion.ToLower().Contains(this.Filtro.ToLower())));
+            }
+        }
         #endregion
 
         #region Comandos
-        public ICommand AgregarCommand
+        public ICommand AddCommand
         {
             get
             {
                 return new RelayCommand(Add);
             }
-        }
-
-        private async void Add()
-        {
-            await Application.Current.MainPage.DisplayAlert("Pucta", "Si sirvo :v", "Aceptar");
-            if (this.SelectedLote.Cantidad == 0)
-            {
-                await Application.Current.MainPage.DisplayAlert("Denegado", "Este elemento no ha sido agregado", "Aceptar");
-                return;
-            }
-            apiService.AgregarLote(SelectedLote);
-            await Application.Current.MainPage.DisplayAlert("Agregado", "Este elemento ha sido agregado", "Aceptar");
         }
 
         public ICommand RefreshCommand
@@ -140,19 +158,6 @@ namespace App1.ViewModels
             get
             {
                 return new RelayCommand(Search);
-            }
-        }
-
-        private void Search()
-        {
-            if (string.IsNullOrEmpty(this.Filtro))
-            {
-                this.Lista = new ObservableCollection<ListaItemViewModel>(this.ToListaViewModel());
-            }
-            else
-            {
-                this.Lista = new ObservableCollection<ListaItemViewModel>(
-                    this.ToListaViewModel().Where(p => p.Descripcion.ToLower().Contains(this.Filtro.ToLower())));
             }
         }
         #endregion

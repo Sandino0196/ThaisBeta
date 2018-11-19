@@ -48,7 +48,7 @@
                                                Text="{Binding Cantidad, Mode=TwoWay}" Placeholder="Cantidad"/>
                                         <Button Grid.Row="0" Grid.Column="2" 
                                                 Text="Comprar" BackgroundColor="Gray" Grid.RowSpan="2"
-                                                HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding AgregarCommand, Mode=TwoWay}"/>
+                                                HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding AddCommand}"/>
                                     </Grid>
                                 </StackLayout>
                             </Frame>

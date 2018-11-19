@@ -2,7 +2,7 @@
 
 namespace App1.ViewModels
 {
-    public class ProductoViewModel
+    public class ProductoViewModel : BaseViewModel
     {
         #region Propiedades
         public Lote Articulo { get; set; }
