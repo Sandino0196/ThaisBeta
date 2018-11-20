@@ -1,10 +1,6 @@
 ﻿using App1.Models;
-using App1.Views;
-using GalaSoft.MvvmLight.Command;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Windows.Input;
-using Xamarin.Forms;
 
 namespace App1.ViewModels
 {

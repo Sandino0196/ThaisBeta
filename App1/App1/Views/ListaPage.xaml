@@ -28,10 +28,10 @@
                                             <ColumnDefinition Width="Auto"/>
                                         </Grid.ColumnDefinitions>
                                         <StackLayout Grid.Column="0">
-                                            <Label FontSize="Large" FontAttributes="Bold" Text="{Binding Descripcion}" TextColor="DarkBlue"></Label>
-                                            <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding DescripcionLote}" TextColor="Purple"></Label>
+                                            <Label FontSize="Large" FontAttributes="Bold" Text="{Binding Descripcion}" TextColor="DarkBlue"/>
+                                            <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding DescripcionLote}" TextColor="Purple"/>
                                         </StackLayout>
-                                        <Image Grid.Column="1" Grid.ColumnSpan="2" Source="{Binding Imagen}" HeightRequest="100" WidthRequest="100" HorizontalOptions="End"></Image>
+                                        <Image Grid.Column="1" Grid.ColumnSpan="2" Source="{Binding Imagen}" HeightRequest="100" WidthRequest="100" HorizontalOptions="End"/>
                                     </Grid>
                                     <Grid BackgroundColor="LightBlue" IsVisible="{Binding IsVisible}">
                                         <Grid.RowDefinitions>
@@ -45,7 +45,7 @@
                                         <Label Grid.Row="0" Grid.Column="0" 
                                                Text="{Binding Precio}" TextColor="Black" FontSize="Medium"/>
                                         <Entry Grid.Row="0" Grid.Column="1" Keyboard="Numeric"
-                                               Text="{Binding Cantidad, Mode=TwoWay}" Placeholder="Cantidad"/>
+                                               Text="{Binding Cantidad, Mode=TwoWay}"/>
                                         <Button Grid.Row="0" Grid.Column="2" 
                                                 Text="Comprar" BackgroundColor="Gray" Grid.RowSpan="2"
                                                 HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding AddCommand}"/>

@@ -1,8 +1,6 @@
 ﻿using App1.Models;
 using App1.Services;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using Xamarin.Forms;
 
 namespace App1.ViewModels
 {

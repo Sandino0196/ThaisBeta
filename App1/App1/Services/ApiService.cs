@@ -1,8 +1,7 @@
-﻿using Plugin.Connectivity;
+﻿using App1.Models;
+using Plugin.Connectivity;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using App1.Models;
-using System.Collections;
 
 namespace App1.Services
 {

@@ -107,7 +107,9 @@ namespace App1.ViewModels
 
         private async void Add()
         {
-            await Application.Current.MainPage.DisplayAlert("Pucta", "Si sirvo :v", "Aceptar");
+            //await Application.Current.MainPage.DisplayAlert("Pucta", "Si sirvo :v", "Aceptar");
+            apiService.AgregarLote(SelectedLote);
+            await Application.Current.MainPage.DisplayAlert("Agregado", "Este elemento ha sido agregado", "Aceptar");
             return;
             /*if (int.Equals(this.SelectedLote.Cantidad, 0))
             {
