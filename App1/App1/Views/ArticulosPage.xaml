@@ -17,14 +17,14 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <Button Grid.Column="0" Grid.Row="0" Image="DulceLogo" HorizontalOptions="Start"
+                    <Button Grid.Column="0" Grid.Row="0" Image="Banner1" HorizontalOptions="Start"
                         BorderRadius="20" Command="{Binding DulceCommand}"/>
-                    <Button Image="HigieneLogo" Grid.Column="1" Grid.Row="0"
+                    <Button Image="Banner2" Grid.Column="1" Grid.Row="0"
                         HorizontalOptions="End" BorderRadius="20"
                         Command="{Binding HigieneCommand}"/>
-                    <Button Image="HogarLogo" Grid.Column="0" Grid.Row="1" HorizontalOptions="Start"
+                    <Button Image="Banner4" Grid.Column="0" Grid.Row="1" HorizontalOptions="Start"
                          BorderRadius="20" Command="{Binding HogarCommand}"/>
-                    <Button Image="AbarroteriaLogo" Grid.Column="1" Grid.Row="1" 
+                    <Button Image="Banner3" Grid.Column="1" Grid.Row="1" 
                         HorizontalOptions="End" BorderRadius="20"
                         Command="{Binding AbarroteriaCommand}"/>
                 </Grid>

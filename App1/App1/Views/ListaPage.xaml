@@ -14,6 +14,8 @@
                 HeightRequest="46"
                 SearchCommand="{Binding SearchCommand}">
             </SearchBar>
+            <Button Text="Comprar" TextColor="WhiteSmoke" 
+                    Command="{Binding AddCommand}" BackgroundColor="BlueViolet"/>
             <ListView HasUnevenRows="True" IsPullToRefreshEnabled="True" ItemsSource="{Binding Lista}"
                       IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}" RefreshCommand="{Binding RefreshCommand}"
                       SeparatorVisibility="None" BackgroundColor="Silver" SelectedItem="{Binding SelectedLote}">
@@ -33,22 +35,24 @@
                                         </StackLayout>
                                         <Image Grid.Column="1" Grid.ColumnSpan="2" Source="{Binding Imagen}" HeightRequest="100" WidthRequest="100" HorizontalOptions="End"/>
                                     </Grid>
-                                    <Grid BackgroundColor="LightBlue" IsVisible="{Binding IsVisible}">
+                                    <Grid BackgroundColor="MediumTurquoise" IsVisible="{Binding IsVisible}">
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="0.5*"/>
-                                            <ColumnDefinition Width="0.5*"/>
-                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="0.25*"/>
+                                            <ColumnDefinition Width="0.25*"/>
+                                            <ColumnDefinition Width="0.25*"/>
+                                            <ColumnDefinition Width="0.25 *"/>
                                         </Grid.ColumnDefinitions>
-                                        <Label Grid.Row="0" Grid.Column="0" 
+                                        <Label Grid.Row="0" Grid.Column="0"
+                                               Text="Precio: Lps." TextColor="Black" FontSize="Medium"/>
+                                        <Label Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"
                                                Text="{Binding Precio}" TextColor="Black" FontSize="Medium"/>
-                                        <Entry Grid.Row="0" Grid.Column="1" Keyboard="Numeric"
-                                               Text="{Binding Cantidad, Mode=TwoWay}"/>
-                                        <Button Grid.Row="0" Grid.Column="2" 
-                                                Text="Comprar" BackgroundColor="Gray" Grid.RowSpan="2"
-                                                HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding AddCommand}"/>
+                                        <Label Grid.Row="0" Grid.Column="2" HorizontalOptions="End"
+                                               Text="Cantidad" TextColor="Black" FontSize="Medium"/>
+                                        <Entry Grid.Row="0" Grid.Column="3" Placeholder="Cantidad..." Keyboard="Numeric"
+                                               Text="{Binding Cantidad}" TextColor="Black" FontSize="Medium"/>
                                     </Grid>
                                 </StackLayout>
                             </Frame>

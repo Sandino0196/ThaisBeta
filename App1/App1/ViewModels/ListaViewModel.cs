@@ -84,7 +84,6 @@ namespace App1.ViewModels
                 Lista.Where(t => t.CodigoProducto == PreviousSelectedLote.CodigoProducto).FirstOrDefault().IsVisible = false;
             }
             Lista.Where(t => t.CodigoProducto == SelectedLote.CodigoProducto).FirstOrDefault().IsVisible = true;
-            SelectedLote.Cantidad = 0;
             PreviousSelectedLote = SelectedLote;
         }
 
@@ -108,20 +107,17 @@ namespace App1.ViewModels
         private async void Add()
         {
             //await Application.Current.MainPage.DisplayAlert("Pucta", "Si sirvo :v", "Aceptar");
-            apiService.AgregarLote(SelectedLote);
+            /*apiService.AgregarLote(SelectedLote);
             await Application.Current.MainPage.DisplayAlert("Agregado", "Este elemento ha sido agregado", "Aceptar");
-            return;
-            /*if (int.Equals(this.SelectedLote.Cantidad, 0))
+            return;*/
+            if (this.SelectedLote.Cantidad == 0)
             {
                 await Application.Current.MainPage.DisplayAlert("Denegado", "Ingrese una cantidad valida", "Aceptar");
                 return;
             }
-            if (this.SelectedLote.Cantidad == 0)
-            {
-                
-            }
             apiService.AgregarLote(SelectedLote);
-            await Application.Current.MainPage.DisplayAlert("Agregado", "Este elemento ha sido agregado", "Aceptar");*/
+            await Application.Current.MainPage.DisplayAlert("Agregado", "Este elemento ha sido agregado", "Aceptar");
+   
         }
 
         private void Search()
